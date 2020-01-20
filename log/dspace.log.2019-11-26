@@ -1,0 +1,656 @@
+2019-11-26 14:49:46,020 INFO  org.dspace.storage.rdbms.DatabaseUtils @ Loading Flyway DB migrations from: filesystem:c:/dspace/etc/postgres, classpath:org.dspace.storage.rdbms.sqlmigration.postgres, classpath:org.dspace.storage.rdbms.migration
+2019-11-26 14:49:49,000 INFO  org.flywaydb.core.internal.util.VersionPrinter @ Flyway 4.0.3 by Boxfuse
+2019-11-26 14:49:49,163 INFO  org.flywaydb.core.internal.dbsupport.DbSupportFactory @ Database: jdbc:postgresql://localhost:5432/dspace (PostgreSQL 12.0)
+2019-11-26 14:49:50,878 INFO  org.dspace.storage.rdbms.DatabaseUtils @ DSpace database schema is up to date
+2019-11-26 14:49:50,944 INFO  org.dspace.event.EventServiceImpl @ EventService dispatcher pool initialized
+2019-11-26 14:49:51,798 INFO  org.hibernate.annotations.common.Version @ HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2019-11-26 14:49:51,827 INFO  org.hibernate.Version @ HHH000412: Hibernate Core {4.2.21.Final}
+2019-11-26 14:49:51,835 INFO  org.hibernate.cfg.Environment @ HHH000206: hibernate.properties not found
+2019-11-26 14:49:51,839 INFO  org.hibernate.cfg.Environment @ HHH000021: Bytecode provider name : javassist
+2019-11-26 14:49:51,973 INFO  org.hibernate.cfg.Configuration @ HHH000044: Configuring from URL: file:c:/dspace/config/hibernate.cfg.xml
+2019-11-26 14:49:52,325 INFO  org.hibernate.cfg.Configuration @ HHH000041: Configured SessionFactory: null
+2019-11-26 14:49:53,122 INFO  org.hibernate.dialect.Dialect @ HHH000400: Using dialect: org.dspace.storage.rdbms.hibernate.postgres.DSpacePostgreSQL82Dialect
+2019-11-26 14:49:53,163 INFO  org.hibernate.engine.jdbc.internal.LobCreatorBuilder @ HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-11-26 14:49:53,185 INFO  org.hibernate.type.BasicTypeRegistry @ HHH000270: Type registration [pg-uuid] overrides previous : org.hibernate.type.PostgresUUIDType@7f92246
+2019-11-26 14:49:53,185 INFO  org.hibernate.type.BasicTypeRegistry @ HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@44a77af5
+2019-11-26 14:49:54,457 INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator @ HHH000399: Using default transaction strategy (direct JDBC transactions)
+2019-11-26 14:49:54,499 INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory @ HHH000397: Using ASTQueryTranslatorFactory
+2019-11-26 14:49:54,704 WARN  net.sf.ehcache.CacheManager @ Creating a new instance of CacheManager using the diskStorePath "C:\xampp\tomcat\temp" which is already used by an existing CacheManager.
+The source of the configuration was net.sf.ehcache.config.generator.ConfigurationSource$URLConfigurationSource@fa365d9.
+The diskStore path for this CacheManager will be set to C:\xampp\tomcat\temp\ehcache_auto_created_1574801394704.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+2019-11-26 14:49:54,799 INFO  org.hibernate.cache.spi.UpdateTimestampsCache @ HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+2019-11-26 14:49:54,817 INFO  org.hibernate.cache.internal.StandardQueryCache @ HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+2019-11-26 14:49:56,055 INFO  org.hibernate.tool.hbm2ddl.SchemaValidator @ HHH000229: Running schema validator
+2019-11-26 14:49:56,055 INFO  org.hibernate.tool.hbm2ddl.SchemaValidator @ HHH000102: Fetching database metadata
+2019-11-26 14:49:56,114 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.doi
+2019-11-26 14:49:56,115 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [dspace_object, resource_type_id, resource_id, doi_id, doi, status]
+2019-11-26 14:49:56,373 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.bitstream
+2019-11-26 14:49:56,373 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [deleted, size_bytes, internal_id, checksum_algorithm, bitstream_id, checksum, store_number, sequence_id, bitstream_format_id, uuid]
+2019-11-26 14:49:56,386 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.bitstreamformatregistry
+2019-11-26 14:49:56,386 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [short_description, internal, description, bitstream_format_id, mimetype, support_level]
+2019-11-26 14:49:56,399 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.bundle
+2019-11-26 14:49:56,399 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [primary_bitstream_id, bundle_id, uuid]
+2019-11-26 14:49:56,412 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.bundle2bitstream
+2019-11-26 14:49:56,412 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [bitstream_order, bitstream_order_legacy, bundle_id, bitstream_id]
+2019-11-26 14:49:56,459 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.checksum_history
+2019-11-26 14:49:56,459 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [result, process_start_date, process_end_date, bitstream_id, check_id, checksum_calculated, checksum_expected]
+2019-11-26 14:49:56,471 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.checksum_results
+2019-11-26 14:49:56,471 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [result_description, result_code]
+2019-11-26 14:49:56,502 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.collection
+2019-11-26 14:49:56,503 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [collection_id, submitter, logo_bitstream_id, workflow_step_3, admin, workflow_step_1, workflow_step_2, template_item_id, uuid]
+2019-11-26 14:49:56,513 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.collection2item
+2019-11-26 14:49:56,513 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [collection_id, item_id]
+2019-11-26 14:49:56,524 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.community
+2019-11-26 14:49:56,524 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [logo_bitstream_id, community_id, admin, uuid]
+2019-11-26 14:49:56,534 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.community2collection
+2019-11-26 14:49:56,534 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [collection_id, community_id]
+2019-11-26 14:49:56,544 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.community2community
+2019-11-26 14:49:56,545 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [parent_comm_id, child_comm_id]
+2019-11-26 14:49:56,552 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.dspaceobject
+2019-11-26 14:49:56,553 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [uuid]
+2019-11-26 14:49:56,599 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.eperson
+2019-11-26 14:49:56,600 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [sub_frequency, password, can_log_in, digest_algorithm, salt, eperson_id, netid, last_active, self_registered, uuid, email, require_certificate]
+2019-11-26 14:49:56,618 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.epersongroup
+2019-11-26 14:49:56,618 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [permanent, name, eperson_group_id, uuid]
+2019-11-26 14:49:56,634 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.epersongroup2eperson
+2019-11-26 14:49:56,635 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [eperson_id, eperson_group_id]
+2019-11-26 14:49:56,651 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.epersongroup2workspaceitem
+2019-11-26 14:49:56,651 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [eperson_group_id, workspace_item_id]
+2019-11-26 14:49:56,665 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.fileextension
+2019-11-26 14:49:56,665 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [file_extension_id, extension, bitstream_format_id]
+2019-11-26 14:49:56,675 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.group2group
+2019-11-26 14:49:56,675 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [child_id, parent_id]
+2019-11-26 14:49:56,684 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.group2groupcache
+2019-11-26 14:49:56,684 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [child_id, parent_id]
+2019-11-26 14:49:56,695 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.handle
+2019-11-26 14:49:56,695 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [handle_id, resource_legacy_id, resource_type_id, resource_id, handle]
+2019-11-26 14:49:56,707 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.harvested_collection
+2019-11-26 14:49:56,707 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [collection_id, oai_source, metadata_config_id, last_harvested, oai_set_id, harvest_type, harvest_status, id, harvest_message, harvest_start_time]
+2019-11-26 14:49:56,715 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.harvested_item
+2019-11-26 14:49:56,715 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [oai_id, last_harvested, item_id, id]
+2019-11-26 14:49:56,724 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.item
+2019-11-26 14:49:56,724 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [item_id, discoverable, in_archive, withdrawn, submitter_id, last_modified, uuid, owning_collection]
+2019-11-26 14:49:56,731 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.item2bundle
+2019-11-26 14:49:56,731 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [item_id, bundle_id]
+2019-11-26 14:49:56,741 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.metadatafieldregistry
+2019-11-26 14:49:56,741 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [scope_note, metadata_schema_id, qualifier, metadata_field_id, element]
+2019-11-26 14:49:56,751 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.metadataschemaregistry
+2019-11-26 14:49:56,751 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [metadata_schema_id, namespace, short_id]
+2019-11-26 14:49:56,761 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.metadatavalue
+2019-11-26 14:49:56,761 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [text_value, dspace_object_id, text_lang, authority, confidence, metadata_value_id, place, metadata_field_id]
+2019-11-26 14:49:56,770 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.most_recent_checksum
+2019-11-26 14:49:56,771 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [last_process_end_date, result, expected_checksum, matched_prev_checksum, to_be_processed, current_checksum, checksum_algorithm, bitstream_id, last_process_start_date]
+2019-11-26 14:49:56,780 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.registrationdata
+2019-11-26 14:49:56,780 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [registrationdata_id, expires, email, token]
+2019-11-26 14:49:56,790 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.requestitem
+2019-11-26 14:49:56,790 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [request_name, decision_date, expires, item_id, request_message, request_email, request_date, bitstream_id, allfiles, accept_request, requestitem_id, token]
+2019-11-26 14:49:56,799 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.resourcepolicy
+2019-11-26 14:49:56,799 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [end_date, dspace_object, rptype, resource_type_id, policy_id, eperson_id, action_id, epersongroup_id, rpdescription, resource_id, start_date, rpname]
+2019-11-26 14:49:56,807 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.site
+2019-11-26 14:49:56,807 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [uuid]
+2019-11-26 14:49:56,814 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.subscription
+2019-11-26 14:49:56,814 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [subscription_id, collection_id, eperson_id]
+2019-11-26 14:49:56,820 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.tasklistitem
+2019-11-26 14:49:56,820 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [workflow_id, eperson_id, tasklist_id]
+2019-11-26 14:49:56,826 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.versionhistory
+2019-11-26 14:49:56,826 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [versionhistory_id]
+2019-11-26 14:49:56,833 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.versionitem
+2019-11-26 14:49:56,833 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [version_summary, eperson_id, item_id, version_date, version_number, versionitem_id, versionhistory_id]
+2019-11-26 14:49:56,839 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.webapp
+2019-11-26 14:49:56,839 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [webapp_id, appname, started, url, isui]
+2019-11-26 14:49:56,846 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.workflowitem
+2019-11-26 14:49:56,846 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [collection_id, owner, workflow_id, published_before, item_id, multiple_titles, multiple_files, state]
+2019-11-26 14:49:56,856 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.workspaceitem
+2019-11-26 14:49:56,856 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [collection_id, stage_reached, page_reached, published_before, item_id, multiple_titles, multiple_files, workspace_item_id]
+2019-11-26 14:49:58,452 INFO  org.dspace.statistics.SolrLoggerServiceImpl @ solr-statistics.spidersfile:null
+2019-11-26 14:49:58,452 INFO  org.dspace.statistics.SolrLoggerServiceImpl @ solr-statistics.server:http://localhost:8080/solr/statistics
+2019-11-26 14:49:58,452 INFO  org.dspace.statistics.SolrLoggerServiceImpl @ usage-statistics.dbfile:c:/dspace/config/GeoLite2-City.mmdb
+2019-11-26 14:49:59,426 INFO  org.dspace.statistics.SolrLoggerServiceImpl @ useProxies=false
+2019-11-26 14:50:43,980 INFO  org.dspace.storage.rdbms.DatabaseUtils @ Loading Flyway DB migrations from: filesystem:c:/dspace/etc/postgres, classpath:org.dspace.storage.rdbms.sqlmigration.postgres, classpath:org.dspace.storage.rdbms.migration
+2019-11-26 14:50:44,684 INFO  org.flywaydb.core.internal.util.VersionPrinter @ Flyway 4.0.3 by Boxfuse
+2019-11-26 14:50:44,776 INFO  org.flywaydb.core.internal.dbsupport.DbSupportFactory @ Database: jdbc:postgresql://localhost:5432/dspace (PostgreSQL 12.0)
+2019-11-26 14:50:47,193 INFO  org.dspace.storage.rdbms.DatabaseUtils @ DSpace database schema is up to date
+2019-11-26 14:50:47,236 INFO  org.dspace.event.EventServiceImpl @ EventService dispatcher pool initialized
+2019-11-26 14:50:49,038 INFO  org.hibernate.annotations.common.Version @ HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2019-11-26 14:50:49,050 INFO  org.hibernate.Version @ HHH000412: Hibernate Core {4.2.21.Final}
+2019-11-26 14:50:49,099 INFO  org.hibernate.cfg.Environment @ HHH000206: hibernate.properties not found
+2019-11-26 14:50:49,103 INFO  org.hibernate.cfg.Environment @ HHH000021: Bytecode provider name : javassist
+2019-11-26 14:50:49,269 INFO  org.hibernate.cfg.Configuration @ HHH000044: Configuring from URL: file:c:/dspace/config/hibernate.cfg.xml
+2019-11-26 14:50:49,827 INFO  org.hibernate.cfg.Configuration @ HHH000041: Configured SessionFactory: null
+2019-11-26 14:50:50,667 INFO  org.hibernate.dialect.Dialect @ HHH000400: Using dialect: org.dspace.storage.rdbms.hibernate.postgres.DSpacePostgreSQL82Dialect
+2019-11-26 14:50:50,709 INFO  org.hibernate.engine.jdbc.internal.LobCreatorBuilder @ HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-11-26 14:50:50,737 INFO  org.hibernate.type.BasicTypeRegistry @ HHH000270: Type registration [pg-uuid] overrides previous : org.hibernate.type.PostgresUUIDType@568207ba
+2019-11-26 14:50:50,737 INFO  org.hibernate.type.BasicTypeRegistry @ HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1ac4849e
+2019-11-26 14:50:51,636 INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator @ HHH000399: Using default transaction strategy (direct JDBC transactions)
+2019-11-26 14:50:51,666 INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory @ HHH000397: Using ASTQueryTranslatorFactory
+2019-11-26 14:50:51,806 WARN  net.sf.ehcache.CacheManager @ Creating a new instance of CacheManager using the diskStorePath "C:\xampp\tomcat\temp" which is already used by an existing CacheManager.
+The source of the configuration was net.sf.ehcache.config.generator.ConfigurationSource$URLConfigurationSource@5032138c.
+The diskStore path for this CacheManager will be set to C:\xampp\tomcat\temp\ehcache_auto_created_1574801451806.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+2019-11-26 14:50:51,923 INFO  org.hibernate.cache.spi.UpdateTimestampsCache @ HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+2019-11-26 14:50:51,936 INFO  org.hibernate.cache.internal.StandardQueryCache @ HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+2019-11-26 14:50:53,693 INFO  org.hibernate.tool.hbm2ddl.SchemaValidator @ HHH000229: Running schema validator
+2019-11-26 14:50:53,693 INFO  org.hibernate.tool.hbm2ddl.SchemaValidator @ HHH000102: Fetching database metadata
+2019-11-26 14:50:53,720 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.doi
+2019-11-26 14:50:53,720 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [dspace_object, resource_type_id, resource_id, doi_id, doi, status]
+2019-11-26 14:50:53,728 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.bitstream
+2019-11-26 14:50:53,728 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [deleted, size_bytes, internal_id, checksum_algorithm, bitstream_id, checksum, store_number, sequence_id, bitstream_format_id, uuid]
+2019-11-26 14:50:53,738 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.bitstreamformatregistry
+2019-11-26 14:50:53,738 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [short_description, internal, description, bitstream_format_id, mimetype, support_level]
+2019-11-26 14:50:53,749 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.bundle
+2019-11-26 14:50:53,750 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [primary_bitstream_id, bundle_id, uuid]
+2019-11-26 14:50:53,756 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.bundle2bitstream
+2019-11-26 14:50:53,757 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [bitstream_order, bitstream_order_legacy, bundle_id, bitstream_id]
+2019-11-26 14:50:53,772 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.checksum_history
+2019-11-26 14:50:53,772 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [result, process_start_date, process_end_date, bitstream_id, check_id, checksum_calculated, checksum_expected]
+2019-11-26 14:50:53,782 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.checksum_results
+2019-11-26 14:50:53,782 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [result_description, result_code]
+2019-11-26 14:50:53,789 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.collection
+2019-11-26 14:50:53,790 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [collection_id, submitter, logo_bitstream_id, workflow_step_3, admin, workflow_step_1, workflow_step_2, template_item_id, uuid]
+2019-11-26 14:50:53,796 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.collection2item
+2019-11-26 14:50:53,796 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [collection_id, item_id]
+2019-11-26 14:50:53,804 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.community
+2019-11-26 14:50:53,804 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [logo_bitstream_id, community_id, admin, uuid]
+2019-11-26 14:50:53,812 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.community2collection
+2019-11-26 14:50:53,812 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [collection_id, community_id]
+2019-11-26 14:50:53,819 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.community2community
+2019-11-26 14:50:53,819 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [parent_comm_id, child_comm_id]
+2019-11-26 14:50:53,828 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.dspaceobject
+2019-11-26 14:50:53,828 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [uuid]
+2019-11-26 14:50:53,837 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.eperson
+2019-11-26 14:50:53,837 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [sub_frequency, password, can_log_in, digest_algorithm, salt, eperson_id, netid, last_active, self_registered, uuid, email, require_certificate]
+2019-11-26 14:50:53,845 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.epersongroup
+2019-11-26 14:50:53,845 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [permanent, name, eperson_group_id, uuid]
+2019-11-26 14:50:53,852 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.epersongroup2eperson
+2019-11-26 14:50:53,852 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [eperson_id, eperson_group_id]
+2019-11-26 14:50:53,858 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.epersongroup2workspaceitem
+2019-11-26 14:50:53,858 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [eperson_group_id, workspace_item_id]
+2019-11-26 14:50:53,867 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.fileextension
+2019-11-26 14:50:53,867 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [file_extension_id, extension, bitstream_format_id]
+2019-11-26 14:50:53,873 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.group2group
+2019-11-26 14:50:53,873 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [child_id, parent_id]
+2019-11-26 14:50:53,882 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.group2groupcache
+2019-11-26 14:50:53,882 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [child_id, parent_id]
+2019-11-26 14:50:53,889 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.handle
+2019-11-26 14:50:53,889 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [handle_id, resource_legacy_id, resource_type_id, resource_id, handle]
+2019-11-26 14:50:53,898 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.harvested_collection
+2019-11-26 14:50:53,898 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [collection_id, oai_source, metadata_config_id, last_harvested, oai_set_id, harvest_type, harvest_status, id, harvest_message, harvest_start_time]
+2019-11-26 14:50:53,905 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.harvested_item
+2019-11-26 14:50:53,905 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [oai_id, last_harvested, item_id, id]
+2019-11-26 14:50:53,915 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.item
+2019-11-26 14:50:53,916 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [item_id, discoverable, in_archive, withdrawn, submitter_id, last_modified, uuid, owning_collection]
+2019-11-26 14:50:53,924 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.item2bundle
+2019-11-26 14:50:53,924 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [item_id, bundle_id]
+2019-11-26 14:50:53,932 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.metadatafieldregistry
+2019-11-26 14:50:53,933 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [scope_note, metadata_schema_id, qualifier, metadata_field_id, element]
+2019-11-26 14:50:53,939 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.metadataschemaregistry
+2019-11-26 14:50:53,939 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [metadata_schema_id, namespace, short_id]
+2019-11-26 14:50:53,948 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.metadatavalue
+2019-11-26 14:50:53,948 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [text_value, dspace_object_id, text_lang, authority, confidence, metadata_value_id, place, metadata_field_id]
+2019-11-26 14:50:53,956 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.most_recent_checksum
+2019-11-26 14:50:53,956 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [last_process_end_date, result, expected_checksum, matched_prev_checksum, to_be_processed, current_checksum, checksum_algorithm, bitstream_id, last_process_start_date]
+2019-11-26 14:50:53,964 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.registrationdata
+2019-11-26 14:50:53,964 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [registrationdata_id, expires, email, token]
+2019-11-26 14:50:53,970 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.requestitem
+2019-11-26 14:50:53,970 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [request_name, decision_date, expires, item_id, request_message, request_email, request_date, bitstream_id, allfiles, accept_request, requestitem_id, token]
+2019-11-26 14:50:53,980 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.resourcepolicy
+2019-11-26 14:50:53,980 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [end_date, dspace_object, rptype, resource_type_id, policy_id, eperson_id, action_id, epersongroup_id, rpdescription, resource_id, start_date, rpname]
+2019-11-26 14:50:53,991 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.site
+2019-11-26 14:50:53,992 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [uuid]
+2019-11-26 14:50:53,998 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.subscription
+2019-11-26 14:50:53,999 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [subscription_id, collection_id, eperson_id]
+2019-11-26 14:50:54,005 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.tasklistitem
+2019-11-26 14:50:54,005 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [workflow_id, eperson_id, tasklist_id]
+2019-11-26 14:50:54,014 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.versionhistory
+2019-11-26 14:50:54,014 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [versionhistory_id]
+2019-11-26 14:50:54,022 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.versionitem
+2019-11-26 14:50:54,023 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [version_summary, eperson_id, item_id, version_date, version_number, versionitem_id, versionhistory_id]
+2019-11-26 14:50:54,028 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.webapp
+2019-11-26 14:50:54,028 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [webapp_id, appname, started, url, isui]
+2019-11-26 14:50:54,034 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.workflowitem
+2019-11-26 14:50:54,035 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [collection_id, owner, workflow_id, published_before, item_id, multiple_titles, multiple_files, state]
+2019-11-26 14:50:54,042 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.workspaceitem
+2019-11-26 14:50:54,042 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [collection_id, stage_reached, page_reached, published_before, item_id, multiple_titles, multiple_files, workspace_item_id]
+2019-11-26 14:50:54,669 INFO  org.dspace.statistics.SolrLoggerServiceImpl @ solr-statistics.spidersfile:null
+2019-11-26 14:50:54,669 INFO  org.dspace.statistics.SolrLoggerServiceImpl @ solr-statistics.server:http://localhost:8080/solr/statistics
+2019-11-26 14:50:54,669 INFO  org.dspace.statistics.SolrLoggerServiceImpl @ usage-statistics.dbfile:c:/dspace/config/GeoLite2-City.mmdb
+2019-11-26 14:50:55,576 INFO  org.dspace.statistics.SolrLoggerServiceImpl @ useProxies=false
+2019-11-26 14:52:04,239 INFO  org.dspace.statistics.SolrLoggerServiceImpl @ solr-statistics.spidersfile:null
+2019-11-26 14:52:04,239 INFO  org.dspace.statistics.SolrLoggerServiceImpl @ solr-statistics.server:http://localhost:8080/solr/statistics
+2019-11-26 14:52:04,239 INFO  org.dspace.statistics.SolrLoggerServiceImpl @ usage-statistics.dbfile:c:/dspace/config/GeoLite2-City.mmdb
+2019-11-26 14:52:04,650 INFO  org.dspace.statistics.SolrLoggerServiceImpl @ useProxies=false
+2019-11-26 14:52:05,482 INFO  org.dspace.storage.rdbms.DatabaseUtils @ Loading Flyway DB migrations from: filesystem:c:/dspace/etc/postgres, classpath:org.dspace.storage.rdbms.sqlmigration.postgres, classpath:org.dspace.storage.rdbms.migration
+2019-11-26 14:52:05,685 INFO  org.flywaydb.core.internal.util.VersionPrinter @ Flyway 4.0.3 by Boxfuse
+2019-11-26 14:52:05,765 INFO  org.flywaydb.core.internal.dbsupport.DbSupportFactory @ Database: jdbc:postgresql://localhost:5432/dspace (PostgreSQL 12.0)
+2019-11-26 14:52:06,416 INFO  org.dspace.storage.rdbms.DatabaseUtils @ DSpace database schema is up to date
+2019-11-26 14:52:06,443 INFO  org.dspace.event.EventServiceImpl @ EventService dispatcher pool initialized
+2019-11-26 14:52:06,914 INFO  org.hibernate.annotations.common.Version @ HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2019-11-26 14:52:06,928 INFO  org.hibernate.Version @ HHH000412: Hibernate Core {4.2.21.Final}
+2019-11-26 14:52:06,935 INFO  org.hibernate.cfg.Environment @ HHH000206: hibernate.properties not found
+2019-11-26 14:52:06,938 INFO  org.hibernate.cfg.Environment @ HHH000021: Bytecode provider name : javassist
+2019-11-26 14:52:07,018 INFO  org.hibernate.cfg.Configuration @ HHH000044: Configuring from URL: file:c:/dspace/config/hibernate.cfg.xml
+2019-11-26 14:52:07,220 INFO  org.hibernate.cfg.Configuration @ HHH000041: Configured SessionFactory: null
+2019-11-26 14:52:07,628 INFO  org.hibernate.dialect.Dialect @ HHH000400: Using dialect: org.dspace.storage.rdbms.hibernate.postgres.DSpacePostgreSQL82Dialect
+2019-11-26 14:52:07,666 INFO  org.hibernate.engine.jdbc.internal.LobCreatorBuilder @ HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-11-26 14:52:07,688 INFO  org.hibernate.type.BasicTypeRegistry @ HHH000270: Type registration [pg-uuid] overrides previous : org.hibernate.type.PostgresUUIDType@2cb72b85
+2019-11-26 14:52:07,688 INFO  org.hibernate.type.BasicTypeRegistry @ HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5fb98349
+2019-11-26 14:52:08,232 INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator @ HHH000399: Using default transaction strategy (direct JDBC transactions)
+2019-11-26 14:52:08,248 INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory @ HHH000397: Using ASTQueryTranslatorFactory
+2019-11-26 14:52:08,362 WARN  net.sf.ehcache.CacheManager @ Creating a new instance of CacheManager using the diskStorePath "C:\xampp\tomcat\temp" which is already used by an existing CacheManager.
+The source of the configuration was net.sf.ehcache.config.generator.ConfigurationSource$URLConfigurationSource@46db5926.
+The diskStore path for this CacheManager will be set to C:\xampp\tomcat\temp\ehcache_auto_created_1574801528362.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+2019-11-26 14:52:08,425 INFO  org.hibernate.cache.spi.UpdateTimestampsCache @ HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+2019-11-26 14:52:08,435 INFO  org.hibernate.cache.internal.StandardQueryCache @ HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+2019-11-26 14:52:08,521 INFO  org.hibernate.validator.internal.util.Version @ HV000001: Hibernate Validator 5.1.2.Final
+2019-11-26 14:52:09,918 INFO  org.hibernate.tool.hbm2ddl.SchemaValidator @ HHH000229: Running schema validator
+2019-11-26 14:52:09,918 INFO  org.hibernate.tool.hbm2ddl.SchemaValidator @ HHH000102: Fetching database metadata
+2019-11-26 14:52:09,947 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.doi
+2019-11-26 14:52:09,947 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [dspace_object, resource_type_id, resource_id, doi_id, doi, status]
+2019-11-26 14:52:09,958 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.bitstream
+2019-11-26 14:52:09,958 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [deleted, size_bytes, internal_id, checksum_algorithm, bitstream_id, checksum, store_number, sequence_id, bitstream_format_id, uuid]
+2019-11-26 14:52:09,970 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.bitstreamformatregistry
+2019-11-26 14:52:09,970 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [short_description, internal, description, bitstream_format_id, mimetype, support_level]
+2019-11-26 14:52:09,983 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.bundle
+2019-11-26 14:52:09,983 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [primary_bitstream_id, bundle_id, uuid]
+2019-11-26 14:52:09,999 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.bundle2bitstream
+2019-11-26 14:52:09,999 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [bitstream_order, bitstream_order_legacy, bundle_id, bitstream_id]
+2019-11-26 14:52:10,015 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.checksum_history
+2019-11-26 14:52:10,016 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [result, process_start_date, process_end_date, bitstream_id, check_id, checksum_calculated, checksum_expected]
+2019-11-26 14:52:10,026 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.checksum_results
+2019-11-26 14:52:10,026 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [result_description, result_code]
+2019-11-26 14:52:10,033 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.collection
+2019-11-26 14:52:10,033 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [collection_id, submitter, logo_bitstream_id, workflow_step_3, admin, workflow_step_1, workflow_step_2, template_item_id, uuid]
+2019-11-26 14:52:10,039 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.collection2item
+2019-11-26 14:52:10,040 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [collection_id, item_id]
+2019-11-26 14:52:10,046 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.community
+2019-11-26 14:52:10,046 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [logo_bitstream_id, community_id, admin, uuid]
+2019-11-26 14:52:10,054 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.community2collection
+2019-11-26 14:52:10,054 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [collection_id, community_id]
+2019-11-26 14:52:10,060 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.community2community
+2019-11-26 14:52:10,060 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [parent_comm_id, child_comm_id]
+2019-11-26 14:52:10,066 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.dspaceobject
+2019-11-26 14:52:10,066 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [uuid]
+2019-11-26 14:52:10,073 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.eperson
+2019-11-26 14:52:10,073 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [sub_frequency, password, can_log_in, digest_algorithm, salt, eperson_id, netid, last_active, self_registered, uuid, email, require_certificate]
+2019-11-26 14:52:10,079 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.epersongroup
+2019-11-26 14:52:10,080 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [permanent, name, eperson_group_id, uuid]
+2019-11-26 14:52:10,085 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.epersongroup2eperson
+2019-11-26 14:52:10,085 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [eperson_id, eperson_group_id]
+2019-11-26 14:52:10,091 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.epersongroup2workspaceitem
+2019-11-26 14:52:10,091 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [eperson_group_id, workspace_item_id]
+2019-11-26 14:52:10,098 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.fileextension
+2019-11-26 14:52:10,098 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [file_extension_id, extension, bitstream_format_id]
+2019-11-26 14:52:10,108 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.group2group
+2019-11-26 14:52:10,108 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [child_id, parent_id]
+2019-11-26 14:52:10,117 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.group2groupcache
+2019-11-26 14:52:10,118 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [child_id, parent_id]
+2019-11-26 14:52:10,128 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.handle
+2019-11-26 14:52:10,129 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [handle_id, resource_legacy_id, resource_type_id, resource_id, handle]
+2019-11-26 14:52:10,139 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.harvested_collection
+2019-11-26 14:52:10,139 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [collection_id, oai_source, metadata_config_id, last_harvested, oai_set_id, harvest_type, harvest_status, id, harvest_message, harvest_start_time]
+2019-11-26 14:52:10,150 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.harvested_item
+2019-11-26 14:52:10,150 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [oai_id, last_harvested, item_id, id]
+2019-11-26 14:52:10,163 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.item
+2019-11-26 14:52:10,164 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [item_id, discoverable, in_archive, withdrawn, submitter_id, last_modified, uuid, owning_collection]
+2019-11-26 14:52:10,174 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.item2bundle
+2019-11-26 14:52:10,174 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [item_id, bundle_id]
+2019-11-26 14:52:10,184 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.metadatafieldregistry
+2019-11-26 14:52:10,185 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [scope_note, metadata_schema_id, qualifier, metadata_field_id, element]
+2019-11-26 14:52:10,194 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.metadataschemaregistry
+2019-11-26 14:52:10,194 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [metadata_schema_id, namespace, short_id]
+2019-11-26 14:52:10,203 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.metadatavalue
+2019-11-26 14:52:10,204 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [text_value, dspace_object_id, text_lang, authority, confidence, metadata_value_id, place, metadata_field_id]
+2019-11-26 14:52:10,213 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.most_recent_checksum
+2019-11-26 14:52:10,213 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [last_process_end_date, result, expected_checksum, matched_prev_checksum, to_be_processed, current_checksum, checksum_algorithm, bitstream_id, last_process_start_date]
+2019-11-26 14:52:10,223 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.registrationdata
+2019-11-26 14:52:10,223 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [registrationdata_id, expires, email, token]
+2019-11-26 14:52:10,233 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.requestitem
+2019-11-26 14:52:10,233 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [request_name, decision_date, expires, item_id, request_message, request_email, request_date, bitstream_id, allfiles, accept_request, requestitem_id, token]
+2019-11-26 14:52:10,242 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.resourcepolicy
+2019-11-26 14:52:10,243 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [end_date, dspace_object, rptype, resource_type_id, policy_id, eperson_id, action_id, epersongroup_id, rpdescription, resource_id, start_date, rpname]
+2019-11-26 14:52:10,252 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.site
+2019-11-26 14:52:10,252 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [uuid]
+2019-11-26 14:52:10,262 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.subscription
+2019-11-26 14:52:10,262 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [subscription_id, collection_id, eperson_id]
+2019-11-26 14:52:10,273 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.tasklistitem
+2019-11-26 14:52:10,273 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [workflow_id, eperson_id, tasklist_id]
+2019-11-26 14:52:10,282 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.versionhistory
+2019-11-26 14:52:10,282 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [versionhistory_id]
+2019-11-26 14:52:10,292 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.versionitem
+2019-11-26 14:52:10,293 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [version_summary, eperson_id, item_id, version_date, version_number, versionitem_id, versionhistory_id]
+2019-11-26 14:52:10,302 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.webapp
+2019-11-26 14:52:10,302 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [webapp_id, appname, started, url, isui]
+2019-11-26 14:52:10,311 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.workflowitem
+2019-11-26 14:52:10,311 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [collection_id, owner, workflow_id, published_before, item_id, multiple_titles, multiple_files, state]
+2019-11-26 14:52:10,321 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.workspaceitem
+2019-11-26 14:52:10,321 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [collection_id, stage_reached, page_reached, published_before, item_id, multiple_titles, multiple_files, workspace_item_id]
+2019-11-26 14:54:17,094 INFO  org.dspace.storage.rdbms.DatabaseUtils @ Loading Flyway DB migrations from: filesystem:c:/dspace/etc/postgres, classpath:org.dspace.storage.rdbms.sqlmigration.postgres, classpath:org.dspace.storage.rdbms.migration
+2019-11-26 14:54:17,305 INFO  org.flywaydb.core.internal.util.VersionPrinter @ Flyway 4.0.3 by Boxfuse
+2019-11-26 14:54:17,391 INFO  org.flywaydb.core.internal.dbsupport.DbSupportFactory @ Database: jdbc:postgresql://localhost:5432/dspace (PostgreSQL 12.0)
+2019-11-26 14:54:17,926 INFO  org.dspace.storage.rdbms.DatabaseUtils @ DSpace database schema is up to date
+2019-11-26 14:54:17,945 INFO  org.dspace.event.EventServiceImpl @ EventService dispatcher pool initialized
+2019-11-26 14:54:18,567 INFO  org.hibernate.annotations.common.Version @ HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2019-11-26 14:54:18,611 INFO  org.hibernate.Version @ HHH000412: Hibernate Core {4.2.21.Final}
+2019-11-26 14:54:18,620 INFO  org.hibernate.cfg.Environment @ HHH000206: hibernate.properties not found
+2019-11-26 14:54:18,638 INFO  org.hibernate.cfg.Environment @ HHH000021: Bytecode provider name : javassist
+2019-11-26 14:54:18,723 INFO  org.hibernate.cfg.Configuration @ HHH000044: Configuring from URL: file:c:/dspace/config/hibernate.cfg.xml
+2019-11-26 14:54:18,925 INFO  org.hibernate.cfg.Configuration @ HHH000041: Configured SessionFactory: null
+2019-11-26 14:54:19,328 INFO  org.hibernate.dialect.Dialect @ HHH000400: Using dialect: org.dspace.storage.rdbms.hibernate.postgres.DSpacePostgreSQL82Dialect
+2019-11-26 14:54:19,371 INFO  org.hibernate.engine.jdbc.internal.LobCreatorBuilder @ HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-11-26 14:54:19,387 INFO  org.hibernate.type.BasicTypeRegistry @ HHH000270: Type registration [pg-uuid] overrides previous : org.hibernate.type.PostgresUUIDType@5190dc40
+2019-11-26 14:54:19,387 INFO  org.hibernate.type.BasicTypeRegistry @ HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@153fd2b1
+2019-11-26 14:54:19,786 INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator @ HHH000399: Using default transaction strategy (direct JDBC transactions)
+2019-11-26 14:54:19,800 INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory @ HHH000397: Using ASTQueryTranslatorFactory
+2019-11-26 14:54:19,933 WARN  net.sf.ehcache.CacheManager @ Creating a new instance of CacheManager using the diskStorePath "C:\xampp\tomcat\temp" which is already used by an existing CacheManager.
+The source of the configuration was net.sf.ehcache.config.generator.ConfigurationSource$URLConfigurationSource@435e4261.
+The diskStore path for this CacheManager will be set to C:\xampp\tomcat\temp\ehcache_auto_created_1574801659933.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+2019-11-26 14:54:19,979 INFO  org.hibernate.cache.spi.UpdateTimestampsCache @ HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+2019-11-26 14:54:19,988 INFO  org.hibernate.cache.internal.StandardQueryCache @ HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+2019-11-26 14:54:20,567 INFO  org.hibernate.tool.hbm2ddl.SchemaValidator @ HHH000229: Running schema validator
+2019-11-26 14:54:20,567 INFO  org.hibernate.tool.hbm2ddl.SchemaValidator @ HHH000102: Fetching database metadata
+2019-11-26 14:54:20,586 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.doi
+2019-11-26 14:54:20,586 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [dspace_object, resource_type_id, resource_id, doi_id, doi, status]
+2019-11-26 14:54:20,592 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.bitstream
+2019-11-26 14:54:20,593 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [deleted, size_bytes, internal_id, checksum_algorithm, bitstream_id, checksum, store_number, sequence_id, bitstream_format_id, uuid]
+2019-11-26 14:54:20,601 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.bitstreamformatregistry
+2019-11-26 14:54:20,601 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [short_description, internal, description, bitstream_format_id, mimetype, support_level]
+2019-11-26 14:54:20,608 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.bundle
+2019-11-26 14:54:20,608 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [primary_bitstream_id, bundle_id, uuid]
+2019-11-26 14:54:20,614 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.bundle2bitstream
+2019-11-26 14:54:20,614 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [bitstream_order, bitstream_order_legacy, bundle_id, bitstream_id]
+2019-11-26 14:54:20,622 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.checksum_history
+2019-11-26 14:54:20,622 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [result, process_start_date, process_end_date, bitstream_id, check_id, checksum_calculated, checksum_expected]
+2019-11-26 14:54:20,630 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.checksum_results
+2019-11-26 14:54:20,630 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [result_description, result_code]
+2019-11-26 14:54:20,637 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.collection
+2019-11-26 14:54:20,637 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [collection_id, submitter, logo_bitstream_id, workflow_step_3, admin, workflow_step_1, workflow_step_2, template_item_id, uuid]
+2019-11-26 14:54:20,643 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.collection2item
+2019-11-26 14:54:20,643 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [collection_id, item_id]
+2019-11-26 14:54:20,650 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.community
+2019-11-26 14:54:20,650 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [logo_bitstream_id, community_id, admin, uuid]
+2019-11-26 14:54:20,656 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.community2collection
+2019-11-26 14:54:20,656 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [collection_id, community_id]
+2019-11-26 14:54:20,662 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.community2community
+2019-11-26 14:54:20,663 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [parent_comm_id, child_comm_id]
+2019-11-26 14:54:20,669 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.dspaceobject
+2019-11-26 14:54:20,670 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [uuid]
+2019-11-26 14:54:20,676 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.eperson
+2019-11-26 14:54:20,676 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [sub_frequency, password, can_log_in, digest_algorithm, salt, eperson_id, netid, last_active, self_registered, uuid, email, require_certificate]
+2019-11-26 14:54:20,682 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.epersongroup
+2019-11-26 14:54:20,682 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [permanent, name, eperson_group_id, uuid]
+2019-11-26 14:54:20,689 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.epersongroup2eperson
+2019-11-26 14:54:20,689 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [eperson_id, eperson_group_id]
+2019-11-26 14:54:20,695 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.epersongroup2workspaceitem
+2019-11-26 14:54:20,695 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [eperson_group_id, workspace_item_id]
+2019-11-26 14:54:20,702 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.fileextension
+2019-11-26 14:54:20,703 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [file_extension_id, extension, bitstream_format_id]
+2019-11-26 14:54:20,708 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.group2group
+2019-11-26 14:54:20,708 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [child_id, parent_id]
+2019-11-26 14:54:20,715 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.group2groupcache
+2019-11-26 14:54:20,715 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [child_id, parent_id]
+2019-11-26 14:54:20,721 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.handle
+2019-11-26 14:54:20,721 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [handle_id, resource_legacy_id, resource_type_id, resource_id, handle]
+2019-11-26 14:54:20,727 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.harvested_collection
+2019-11-26 14:54:20,728 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [collection_id, oai_source, metadata_config_id, last_harvested, oai_set_id, harvest_type, harvest_status, id, harvest_message, harvest_start_time]
+2019-11-26 14:54:20,735 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.harvested_item
+2019-11-26 14:54:20,735 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [oai_id, last_harvested, item_id, id]
+2019-11-26 14:54:20,741 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.item
+2019-11-26 14:54:20,741 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [item_id, discoverable, in_archive, withdrawn, submitter_id, last_modified, uuid, owning_collection]
+2019-11-26 14:54:20,747 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.item2bundle
+2019-11-26 14:54:20,748 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [item_id, bundle_id]
+2019-11-26 14:54:20,754 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.metadatafieldregistry
+2019-11-26 14:54:20,755 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [scope_note, metadata_schema_id, qualifier, metadata_field_id, element]
+2019-11-26 14:54:20,760 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.metadataschemaregistry
+2019-11-26 14:54:20,761 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [metadata_schema_id, namespace, short_id]
+2019-11-26 14:54:20,767 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.metadatavalue
+2019-11-26 14:54:20,767 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [text_value, dspace_object_id, text_lang, authority, confidence, metadata_value_id, place, metadata_field_id]
+2019-11-26 14:54:20,773 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.most_recent_checksum
+2019-11-26 14:54:20,773 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [last_process_end_date, result, expected_checksum, matched_prev_checksum, to_be_processed, current_checksum, checksum_algorithm, bitstream_id, last_process_start_date]
+2019-11-26 14:54:20,779 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.registrationdata
+2019-11-26 14:54:20,779 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [registrationdata_id, expires, email, token]
+2019-11-26 14:54:20,793 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.requestitem
+2019-11-26 14:54:20,793 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [request_name, decision_date, expires, item_id, request_message, request_email, request_date, bitstream_id, allfiles, accept_request, requestitem_id, token]
+2019-11-26 14:54:20,799 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.resourcepolicy
+2019-11-26 14:54:20,799 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [end_date, dspace_object, rptype, resource_type_id, policy_id, eperson_id, action_id, epersongroup_id, rpdescription, resource_id, start_date, rpname]
+2019-11-26 14:54:20,805 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.site
+2019-11-26 14:54:20,805 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [uuid]
+2019-11-26 14:54:20,812 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.subscription
+2019-11-26 14:54:20,812 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [subscription_id, collection_id, eperson_id]
+2019-11-26 14:54:20,819 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.tasklistitem
+2019-11-26 14:54:20,819 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [workflow_id, eperson_id, tasklist_id]
+2019-11-26 14:54:20,824 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.versionhistory
+2019-11-26 14:54:20,824 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [versionhistory_id]
+2019-11-26 14:54:20,831 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.versionitem
+2019-11-26 14:54:20,831 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [version_summary, eperson_id, item_id, version_date, version_number, versionitem_id, versionhistory_id]
+2019-11-26 14:54:20,837 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.webapp
+2019-11-26 14:54:20,837 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [webapp_id, appname, started, url, isui]
+2019-11-26 14:54:20,844 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.workflowitem
+2019-11-26 14:54:20,844 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [collection_id, owner, workflow_id, published_before, item_id, multiple_titles, multiple_files, state]
+2019-11-26 14:54:20,851 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000261: Table found: public.workspaceitem
+2019-11-26 14:54:20,851 INFO  org.hibernate.tool.hbm2ddl.TableMetadata @ HHH000037: Columns: [collection_id, stage_reached, page_reached, published_before, item_id, multiple_titles, multiple_files, workspace_item_id]
+2019-11-26 14:54:24,625 INFO  org.dspace.statistics.SolrLoggerServiceImpl @ solr-statistics.spidersfile:null
+2019-11-26 14:54:24,626 INFO  org.dspace.statistics.SolrLoggerServiceImpl @ solr-statistics.server:http://localhost:8080/solr/statistics
+2019-11-26 14:54:24,627 INFO  org.dspace.statistics.SolrLoggerServiceImpl @ usage-statistics.dbfile:c:/dspace/config/GeoLite2-City.mmdb
+2019-11-26 14:54:24,948 INFO  org.dspace.statistics.SolrLoggerServiceImpl @ useProxies=false
+2019-11-26 14:54:25,238 INFO  org.dspace.app.xmlui.configuration.XMLUIConfiguration @ Loading XMLUI configuration from: c:/dspace\config\xmlui.xconf
+2019-11-26 14:54:25,394 INFO  org.dspace.app.xmlui.configuration.XMLUIConfiguration @ Aspect Installed: name='Displaying Artifacts', path='resource://aspects/ViewArtifacts/'.
+2019-11-26 14:54:25,394 INFO  org.dspace.app.xmlui.configuration.XMLUIConfiguration @ Aspect Installed: name='Browsing Artifacts', path='resource://aspects/BrowseArtifacts/'.
+2019-11-26 14:54:25,394 INFO  org.dspace.app.xmlui.configuration.XMLUIConfiguration @ Aspect Installed: name='Discovery', path='resource://aspects/Discovery/'.
+2019-11-26 14:54:25,394 INFO  org.dspace.app.xmlui.configuration.XMLUIConfiguration @ Aspect Installed: name='Administration', path='resource://aspects/Administrative/'.
+2019-11-26 14:54:25,394 INFO  org.dspace.app.xmlui.configuration.XMLUIConfiguration @ Aspect Installed: name='E-Person', path='resource://aspects/EPerson/'.
+2019-11-26 14:54:25,394 INFO  org.dspace.app.xmlui.configuration.XMLUIConfiguration @ Aspect Installed: name='Submission and Workflow', path='resource://aspects/Submission/'.
+2019-11-26 14:54:25,394 INFO  org.dspace.app.xmlui.configuration.XMLUIConfiguration @ Aspect Installed: name='Statistics', path='resource://aspects/Statistics/'.
+2019-11-26 14:54:25,394 INFO  org.dspace.app.xmlui.configuration.XMLUIConfiguration @ Aspect Installed: name='Original Workflow', path='resource://aspects/Workflow/'.
+2019-11-26 14:54:25,396 INFO  org.dspace.app.xmlui.configuration.XMLUIConfiguration @ Theme Installed: name='Atmire Mirage Theme', path='Mirage/', id='null', regex='.*', handle='null'.
+2019-11-26 14:55:07,196 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2019-11-26 14:56:37,757 INFO  org.dspace.usage.LoggerUsageEventListener @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_community:community_id=aaf656ed-be95-41f9-8875-b6000d4d6e57
+2019-11-26 14:56:37,830 INFO  org.dspace.statistics.util.SpiderDetectorServiceImpl @ Loaded pattern file:  c:\dspace\config\spiders\agents\example
+2019-11-26 14:56:37,834 INFO  org.dspace.statistics.util.SpiderDetectorServiceImpl @ Loaded pattern file:  c:\dspace\config\spiders\agents\iplists.com-non_engines
+2019-11-26 14:56:37,846 INFO  org.dspace.statistics.util.SpiderDetectorServiceImpl @ Loaded Spider IP file: c:\dspace\config\spiders\iplists.com-altavista.txt
+2019-11-26 14:56:37,849 INFO  org.dspace.statistics.util.SpiderDetectorServiceImpl @ Loaded Spider IP file: c:\dspace\config\spiders\iplists.com-excite.txt
+2019-11-26 14:56:37,853 INFO  org.dspace.statistics.util.SpiderDetectorServiceImpl @ Loaded Spider IP file: c:\dspace\config\spiders\iplists.com-google.txt
+2019-11-26 14:56:37,855 INFO  org.dspace.statistics.util.SpiderDetectorServiceImpl @ Loaded Spider IP file: c:\dspace\config\spiders\iplists.com-infoseek.txt
+2019-11-26 14:56:37,863 INFO  org.dspace.statistics.util.SpiderDetectorServiceImpl @ Loaded Spider IP file: c:\dspace\config\spiders\iplists.com-inktomi.txt
+2019-11-26 14:56:37,866 INFO  org.dspace.statistics.util.SpiderDetectorServiceImpl @ Loaded Spider IP file: c:\dspace\config\spiders\iplists.com-lycos.txt
+2019-11-26 14:56:37,901 INFO  org.dspace.statistics.util.SpiderDetectorServiceImpl @ Loaded Spider IP file: c:\dspace\config\spiders\iplists.com-misc.txt
+2019-11-26 14:56:37,902 INFO  org.dspace.statistics.util.SpiderDetectorServiceImpl @ Loaded pattern file:  c:\dspace\config\spiders\domains\example
+2019-11-26 14:56:39,161 INFO  org.dspace.statistics.SolrLoggerServiceImpl @ Failed DNS Lookup for IP:0:0:0:0:0:0:0:1
+2019-11-26 14:56:39,170 ERROR org.dspace.statistics.SolrLoggerServiceImpl @ Unable to get location of request:  The address 0:0:0:0:0:0:0:1 is not in the database.
+2019-11-26 14:56:41,930 INFO  org.dspace.usage.LoggerUsageEventListener @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=0271faad-053d-4124-8341-20316e8e9609
+2019-11-26 14:56:42,948 INFO  org.dspace.statistics.SolrLoggerServiceImpl @ Failed DNS Lookup for IP:0:0:0:0:0:0:0:1
+2019-11-26 14:56:42,950 ERROR org.dspace.statistics.SolrLoggerServiceImpl @ Unable to get location of request:  The address 0:0:0:0:0:0:0:1 is not in the database.
+2019-11-26 14:56:54,394 INFO  org.dspace.usage.LoggerUsageEventListener @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_collection:collection_id=bf5c0100-f33e-4ea2-84da-1bc3596750ac
+2019-11-26 14:56:55,672 INFO  org.dspace.statistics.SolrLoggerServiceImpl @ Failed DNS Lookup for IP:0:0:0:0:0:0:0:1
+2019-11-26 14:56:55,674 ERROR org.dspace.statistics.SolrLoggerServiceImpl @ Unable to get location of request:  The address 0:0:0:0:0:0:0:1 is not in the database.
+2019-11-26 14:57:05,575 INFO  org.dspace.authenticate.PasswordAuthentication @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:authenticate:attempting password auth of user=admin@app.activiti.com
+2019-11-26 14:57:05,578 INFO  org.dspace.app.xmlui.utils.AuthenticationUtil @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:failed_login:email=admin@app.activiti.com, realm=null, result=4
+2019-11-26 14:57:18,006 INFO  org.dspace.authenticate.PasswordAuthentication @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:authenticate:attempting password auth of user=galileoga63@gmail.com
+2019-11-26 14:57:18,420 INFO  org.dspace.authenticate.PasswordAuthentication @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:authenticate:type=PasswordAuthentication
+2019-11-26 14:57:18,421 INFO  org.dspace.eperson.EPersonServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:update_eperson:eperson_id=be95e2da-b7d4-429e-ae91-e70526f7a795
+2019-11-26 14:57:18,421 INFO  org.dspace.app.xmlui.utils.AuthenticationUtil @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:login:type=explicit
+2019-11-26 14:57:18,734 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2019-11-26 14:58:01,894 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2019-11-26 14:58:46,285 INFO  org.dspace.authenticate.PasswordAuthentication @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:authenticate:attempting password auth of user=galileoga63@gmail.com
+2019-11-26 14:58:46,297 INFO  org.dspace.authenticate.PasswordAuthentication @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:authenticate:type=PasswordAuthentication
+2019-11-26 14:58:46,298 INFO  org.dspace.eperson.EPersonServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:update_eperson:eperson_id=be95e2da-b7d4-429e-ae91-e70526f7a795
+2019-11-26 14:58:46,298 INFO  org.dspace.app.xmlui.utils.AuthenticationUtil @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:login:type=explicit
+2019-11-26 14:58:46,524 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2019-11-26 14:58:57,609 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2019-11-26 14:59:01,615 INFO  org.dspace.usage.LoggerUsageEventListener @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_community:community_id=aaf656ed-be95-41f9-8875-b6000d4d6e57
+2019-11-26 14:59:02,633 INFO  org.dspace.statistics.SolrLoggerServiceImpl @ Failed DNS Lookup for IP:0:0:0:0:0:0:0:1
+2019-11-26 14:59:02,634 ERROR org.dspace.statistics.SolrLoggerServiceImpl @ Unable to get location of request:  The address 0:0:0:0:0:0:0:1 is not in the database.
+2019-11-26 15:00:24,058 INFO  org.dspace.content.CommunityServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:add_collection:community_id=aaf656ed-be95-41f9-8875-b6000d4d6e57,collection_id=c333178e-a396-4d85-93ea-00f7c593847f
+2019-11-26 15:00:24,259 INFO  org.hibernate.dialect.Dialect @ HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2019-11-26 15:00:24,732 INFO  org.dspace.content.CollectionServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:create_collection:collection_id=c333178e-a396-4d85-93ea-00f7c593847f,handle=123456789/9
+2019-11-26 15:00:24,800 INFO  org.dspace.content.CollectionServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:update_collection:collection_id=c333178e-a396-4d85-93ea-00f7c593847f
+2019-11-26 15:00:25,423 INFO  org.dspace.discovery.SolrServiceImpl @ Wrote Collection: 123456789/9 to Index
+2019-11-26 15:00:34,826 INFO  org.dspace.eperson.GroupServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:create_group:group_id=c4f92f66-cc24-454a-90ea-627eebf0279c
+2019-11-26 15:00:34,834 INFO  org.dspace.eperson.GroupServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:update_group:group_id=c4f92f66-cc24-454a-90ea-627eebf0279c
+2019-11-26 15:00:35,568 INFO  org.dspace.eperson.GroupServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:update_group:group_id=c4f92f66-cc24-454a-90ea-627eebf0279c
+2019-11-26 15:00:35,590 INFO  org.dspace.content.CollectionServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:update_collection:collection_id=c333178e-a396-4d85-93ea-00f7c593847f
+2019-11-26 15:00:35,806 INFO  org.dspace.discovery.SolrServiceImpl @ Wrote Collection: 123456789/9 to Index
+2019-11-26 15:00:50,238 INFO  org.dspace.eperson.GroupServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:update_group:group_id=c4f92f66-cc24-454a-90ea-627eebf0279c
+2019-11-26 15:02:33,389 INFO  org.dspace.eperson.GroupServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:create_group:group_id=1a3e74d4-2655-4ac7-9bec-772ccfb3b0e7
+2019-11-26 15:02:33,393 INFO  org.dspace.eperson.GroupServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:update_group:group_id=1a3e74d4-2655-4ac7-9bec-772ccfb3b0e7
+2019-11-26 15:02:33,408 INFO  org.dspace.eperson.GroupServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:update_group:group_id=1a3e74d4-2655-4ac7-9bec-772ccfb3b0e7
+2019-11-26 15:02:33,418 INFO  org.dspace.content.CollectionServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:update_collection:collection_id=c333178e-a396-4d85-93ea-00f7c593847f
+2019-11-26 15:02:34,609 INFO  org.dspace.discovery.SolrServiceImpl @ Wrote Collection: 123456789/9 to Index
+2019-11-26 15:02:49,529 INFO  org.dspace.eperson.GroupServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:update_group:group_id=1a3e74d4-2655-4ac7-9bec-772ccfb3b0e7
+2019-11-26 15:02:53,966 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2019-11-26 15:02:57,910 INFO  org.dspace.usage.LoggerUsageEventListener @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_collection:collection_id=c333178e-a396-4d85-93ea-00f7c593847f
+2019-11-26 15:02:58,927 INFO  org.dspace.statistics.SolrLoggerServiceImpl @ Failed DNS Lookup for IP:0:0:0:0:0:0:0:1
+2019-11-26 15:02:58,929 ERROR org.dspace.statistics.SolrLoggerServiceImpl @ Unable to get location of request:  The address 0:0:0:0:0:0:0:1 is not in the database.
+2019-11-26 15:03:15,101 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:03:15,229 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:create_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:03:15,229 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:create_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:03:15,230 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:03:15,248 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:03:15,285 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:03:15,295 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:03:15,304 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:03:15,315 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:03:15,316 INFO  org.dspace.content.WorkspaceItemServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:create_workspace_item:workspace_item_id=8item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efbcollection_id=c333178e-a396-4d85-93ea-00f7c593847f
+2019-11-26 15:03:15,541 INFO  org.dspace.content.WorkspaceItemServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_workspace_item:workspace_item_id=8
+2019-11-26 15:03:15,543 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:03:15,547 INFO  org.dspace.content.WorkspaceItemServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_workspace_item:workspace_item_id=8
+2019-11-26 15:03:15,550 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:03:15,551 INFO  org.dspace.content.WorkspaceItemServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_workspace_item:workspace_item_id=8
+2019-11-26 15:03:15,553 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:06:13,230 INFO  org.dspace.content.WorkspaceItemServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_workspace_item:workspace_item_id=8
+2019-11-26 15:06:13,231 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:06:13,470 WARN  org.dspace.app.xmlui.cocoon.DSpaceI18NTransformer @ Translation not found for attribute title in element <img>
+2019-11-26 15:06:40,307 INFO  org.dspace.content.MetadataValueServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:delete_metadata_value: metadata_value_id=185
+2019-11-26 15:06:40,357 INFO  org.dspace.content.MetadataValueServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:delete_metadata_value: metadata_value_id=186
+2019-11-26 15:06:40,357 INFO  org.dspace.content.MetadataValueServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:delete_metadata_value: metadata_value_id=187
+2019-11-26 15:06:40,358 INFO  org.dspace.content.MetadataValueServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:delete_metadata_value: metadata_value_id=188
+2019-11-26 15:06:40,392 INFO  org.dspace.content.WorkspaceItemServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_workspace_item:workspace_item_id=8
+2019-11-26 15:06:40,393 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:06:40,411 INFO  org.dspace.content.WorkspaceItemServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_workspace_item:workspace_item_id=8
+2019-11-26 15:06:40,415 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:06:46,897 INFO  org.dspace.content.WorkspaceItemServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_workspace_item:workspace_item_id=8
+2019-11-26 15:06:46,898 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:06:57,687 INFO  org.dspace.content.WorkspaceItemServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_workspace_item:workspace_item_id=8
+2019-11-26 15:06:57,689 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:07:08,421 INFO  org.dspace.content.MetadataValueServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:delete_metadata_value: metadata_value_id=196
+2019-11-26 15:07:08,428 INFO  org.dspace.content.WorkspaceItemServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_workspace_item:workspace_item_id=8
+2019-11-26 15:07:08,429 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:07:08,439 INFO  org.dspace.content.WorkspaceItemServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_workspace_item:workspace_item_id=8
+2019-11-26 15:07:08,442 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:07:49,966 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:add_bundle:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb,bundle_id=afa641d7-fae5-49fe-a0f9-9a31b83c9d9b
+2019-11-26 15:07:49,990 INFO  org.dspace.content.Bundle @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:create_bundle:bundle_id=afa641d7-fae5-49fe-a0f9-9a31b83c9d9b
+2019-11-26 15:07:50,000 INFO  org.dspace.content.BitstreamServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_bitstream:bitstream_id=4b9bf041-b3a4-4511-a198-dda91d372c53
+2019-11-26 15:07:50,000 INFO  org.dspace.content.BitstreamServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:create_bitstream:bitstream_id=4b9bf041-b3a4-4511-a198-dda91d372c53
+2019-11-26 15:07:50,023 INFO  org.dspace.content.Bundle @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:add_bitstream:bundle_id=afa641d7-fae5-49fe-a0f9-9a31b83c9d9b,bitstream_id=4b9bf041-b3a4-4511-a198-dda91d372c53
+2019-11-26 15:07:50,025 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:07:50,029 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:07:50,051 INFO  org.dspace.content.BitstreamServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_bitstream:bitstream_id=4b9bf041-b3a4-4511-a198-dda91d372c53
+2019-11-26 15:07:50,055 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:add_bundle:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb,bundle_id=afa641d7-fae5-49fe-a0f9-9a31b83c9d9b
+2019-11-26 15:07:50,135 INFO  org.dspace.content.BitstreamServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_bitstream:bitstream_id=4b9bf041-b3a4-4511-a198-dda91d372c53
+2019-11-26 15:07:50,140 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:07:50,155 INFO  org.dspace.content.BitstreamServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_bitstream:bitstream_id=4b9bf041-b3a4-4511-a198-dda91d372c53
+2019-11-26 15:07:58,797 INFO  org.dspace.content.WorkspaceItemServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_workspace_item:workspace_item_id=8
+2019-11-26 15:07:58,797 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:08:23,174 INFO  org.dspace.content.WorkspaceItemServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_workspace_item:workspace_item_id=8
+2019-11-26 15:08:23,175 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:08:28,702 INFO  org.dspace.submit.step.LicenseStep @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:accept_license:workspace_item_id8
+2019-11-26 15:08:28,714 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:add_bundle:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb,bundle_id=6bd0a6b1-c930-4694-b355-b217e74055d5
+2019-11-26 15:08:28,735 INFO  org.dspace.content.Bundle @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:create_bundle:bundle_id=6bd0a6b1-c930-4694-b355-b217e74055d5
+2019-11-26 15:08:28,741 INFO  org.dspace.content.BitstreamServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_bitstream:bitstream_id=06151afc-cf5f-4138-a54d-00836f6415b8
+2019-11-26 15:08:28,742 INFO  org.dspace.content.BitstreamServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:create_bitstream:bitstream_id=06151afc-cf5f-4138-a54d-00836f6415b8
+2019-11-26 15:08:28,754 INFO  org.dspace.content.Bundle @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:add_bitstream:bundle_id=6bd0a6b1-c930-4694-b355-b217e74055d5,bitstream_id=06151afc-cf5f-4138-a54d-00836f6415b8
+2019-11-26 15:08:28,757 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:08:28,761 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:08:28,781 INFO  org.dspace.content.BitstreamServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_bitstream:bitstream_id=06151afc-cf5f-4138-a54d-00836f6415b8
+2019-11-26 15:08:28,785 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:add_bundle:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb,bundle_id=6bd0a6b1-c930-4694-b355-b217e74055d5
+2019-11-26 15:08:28,800 INFO  org.dspace.content.BitstreamServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_bitstream:bitstream_id=06151afc-cf5f-4138-a54d-00836f6415b8
+2019-11-26 15:08:28,803 INFO  org.dspace.content.WorkspaceItemServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_workspace_item:workspace_item_id=8
+2019-11-26 15:08:28,806 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:08:28,811 INFO  org.dspace.content.BitstreamServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_bitstream:bitstream_id=06151afc-cf5f-4138-a54d-00836f6415b8
+2019-11-26 15:08:28,813 INFO  org.dspace.submit.step.CompleteStep @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:submission_complete:Completed submission with id=8
+2019-11-26 15:08:28,813 INFO  org.dspace.workflowbasic.BasicWorkflowServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:start_workflow:workspace_item_id=8item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efbcollection_id=c333178e-a396-4d85-93ea-00f7c593847f
+2019-11-26 15:08:28,823 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:08:28,972 INFO  org.dspace.workflowbasic.BasicWorkflowItem @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_workflow_item:workflow_item_id=6
+2019-11-26 15:08:28,978 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:08:28,993 INFO  org.dspace.content.WorkspaceItemServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:delete_workspace_item:workspace_item_id=8item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efbcollection_id=c333178e-a396-4d85-93ea-00f7c593847f
+2019-11-26 15:08:29,012 INFO  org.dspace.workflowbasic.BasicWorkflowServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:archive_item:workflow_item_id=6item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efbcollection_id=c333178e-a396-4d85-93ea-00f7c593847f
+2019-11-26 15:08:29,109 INFO  org.hibernate.dialect.Dialect @ HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2019-11-26 15:08:29,117 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:08:29,128 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:08:29,141 INFO  org.dspace.content.MetadataValueServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:delete_metadata_value: metadata_value_id=192
+2019-11-26 15:08:29,148 INFO  org.dspace.content.CollectionServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:add_item:collection_id=c333178e-a396-4d85-93ea-00f7c593847f,item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:08:29,178 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:08:29,213 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:08:29,222 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:08:29,264 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:08:29,374 INFO  org.dspace.workflowbasic.BasicWorkflowServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:install_item:workflow_id=6, item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efbhandle=FIXME
+2019-11-26 15:08:32,458 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:08:32,465 INFO  org.dspace.usage.LoggerUsageEventListener @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:workflow_item:handle=123456789/10
+2019-11-26 15:08:32,476 INFO  org.dspace.workflowbasic.BasicWorkflowServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:advance_workflow:workflow_item_id=6,item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb,collection_id=c333178e-a396-4d85-93ea-00f7c593847f,old_state=6,new_state=6
+2019-11-26 15:08:32,482 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:08:32,487 INFO  org.dspace.workflowbasic.BasicWorkflowServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:advance_workflow:workflow_item_id=6,item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb,collection_id=c333178e-a396-4d85-93ea-00f7c593847f,old_state=4,new_state=6
+2019-11-26 15:08:32,491 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:08:32,497 INFO  org.dspace.workflowbasic.BasicWorkflowServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:advance_workflow:workflow_item_id=6,item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb,collection_id=c333178e-a396-4d85-93ea-00f7c593847f,old_state=2,new_state=6
+2019-11-26 15:08:32,502 INFO  org.dspace.content.Item @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:update_item:item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb
+2019-11-26 15:08:32,506 INFO  org.dspace.workflowbasic.BasicWorkflowServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:advance_workflow:workflow_item_id=6,item_id=ea8eb867-cbfd-4a76-9f1e-ca290d921efb,collection_id=c333178e-a396-4d85-93ea-00f7c593847f,old_state=0,new_state=6
+2019-11-26 15:08:55,203 INFO  org.dspace.discovery.SolrServiceImpl @ Wrote Item: 123456789/10 to Index
+2019-11-26 15:09:16,728 INFO  org.dspace.app.xmlui.aspect.eperson.EditProfile @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_profile:
+2019-11-26 15:09:24,535 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2019-11-26 15:09:26,293 INFO  org.dspace.usage.LoggerUsageEventListener @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_collection:collection_id=c333178e-a396-4d85-93ea-00f7c593847f
+2019-11-26 15:09:26,394 ERROR org.dspace.statistics.SolrLoggerServiceImpl @ Unable to get location of request:  The address 0:0:0:0:0:0:0:1 is not in the database.
+2019-11-26 15:09:30,603 INFO  org.dspace.usage.LoggerUsageEventListener @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_item:handle=123456789/10
+2019-11-26 15:09:30,684 ERROR org.dspace.statistics.SolrLoggerServiceImpl @ Unable to get location of request:  The address 0:0:0:0:0:0:0:1 is not in the database.
+2019-11-26 15:09:30,800 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.ItemViewer @ Unhandled identifier URI http://localhost:8080/xmlui/handle/123456789/10
+2019-11-26 15:09:30,809 INFO  org.dspace.app.util.GoogleMetadata @ Using [c:/dspace/config/crosswalks/google-metadata.properties] for Google Metadata configuration
+2019-11-26 15:09:33,282 INFO  org.dspace.usage.LoggerUsageEventListener @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=4b9bf041-b3a4-4511-a198-dda91d372c53
+2019-11-26 15:09:33,364 ERROR org.dspace.statistics.SolrLoggerServiceImpl @ Unable to get location of request:  The address 0:0:0:0:0:0:0:1 is not in the database.
+2019-11-26 15:10:06,792 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2019-11-26 15:11:08,230 INFO  org.dspace.usage.LoggerUsageEventListener @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_item:handle=123456789/10
+2019-11-26 15:11:08,308 ERROR org.dspace.statistics.SolrLoggerServiceImpl @ Unable to get location of request:  The address 0:0:0:0:0:0:0:1 is not in the database.
+2019-11-26 15:11:29,045 INFO  org.dspace.usage.LoggerUsageEventListener @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_item:handle=123456789/10
+2019-11-26 15:11:29,094 ERROR org.dspace.statistics.SolrLoggerServiceImpl @ Unable to get location of request:  The address 0:0:0:0:0:0:0:1 is not in the database.
+2019-11-26 15:12:53,312 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2019-11-26 15:12:59,504 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:browse_by_value:focus=null
+2019-11-26 15:12:59,524 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.ConfigurableBrowse @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:browse:org.dspace.app.xmlui.utils.DSpaceValidity@7cdeb2be
+2019-11-26 15:13:18,899 INFO  org.dspace.usage.LoggerUsageEventListener @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_item:handle=123456789/10
+2019-11-26 15:13:18,961 ERROR org.dspace.statistics.SolrLoggerServiceImpl @ Unable to get location of request:  The address 0:0:0:0:0:0:0:1 is not in the database.
+2019-11-26 15:15:07,788 INFO  org.dspace.eperson.AccountServiceImpl @ Sent account information to galileoga63@gmail.com
+2019-11-26 15:16:22,894 INFO  org.dspace.eperson.PasswordHash @ Initialized a random number stream using SHA1PRNG provided by SUN version 1.8
+2019-11-26 15:16:22,897 INFO  org.dspace.eperson.EPersonServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:update_eperson:eperson_id=be95e2da-b7d4-429e-ae91-e70526f7a795
+2019-11-26 15:16:26,629 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2019-11-26 15:16:37,302 INFO  org.dspace.authenticate.PasswordAuthentication @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:authenticate:attempting password auth of user=galileoga63@gmail.com
+2019-11-26 15:16:37,307 INFO  org.dspace.app.xmlui.utils.AuthenticationUtil @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:failed_login:email=galileoga63@gmail.com, realm=null, result=2
+2019-11-26 15:16:43,368 INFO  org.dspace.authenticate.PasswordAuthentication @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:authenticate:attempting password auth of user=galileoga63@gmail.com
+2019-11-26 15:16:43,374 INFO  org.dspace.authenticate.PasswordAuthentication @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:authenticate:type=PasswordAuthentication
+2019-11-26 15:16:43,374 INFO  org.dspace.eperson.EPersonServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:update_eperson:eperson_id=be95e2da-b7d4-429e-ae91-e70526f7a795
+2019-11-26 15:16:43,374 INFO  org.dspace.app.xmlui.utils.AuthenticationUtil @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:login:type=explicit
+2019-11-26 15:16:43,550 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2019-11-26 15:23:02,934 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2019-11-26 15:23:08,011 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2019-11-26 15:23:28,099 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2019-11-26 15:24:21,335 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2019-11-26 15:24:40,131 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2019-11-26 15:26:51,338 INFO  org.dspace.usage.LoggerUsageEventListener @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_community:community_id=aaf656ed-be95-41f9-8875-b6000d4d6e57
+2019-11-26 15:26:51,405 ERROR org.dspace.statistics.SolrLoggerServiceImpl @ Unable to get location of request:  The address 0:0:0:0:0:0:0:1 is not in the database.
+2019-11-26 15:27:06,687 INFO  org.dspace.usage.LoggerUsageEventListener @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_collection:collection_id=bf5c0100-f33e-4ea2-84da-1bc3596750ac
+2019-11-26 15:27:06,751 ERROR org.dspace.statistics.SolrLoggerServiceImpl @ Unable to get location of request:  The address 0:0:0:0:0:0:0:1 is not in the database.
+2019-11-26 15:27:11,750 INFO  org.dspace.usage.LoggerUsageEventListener @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_item:handle=123456789/4
+2019-11-26 15:27:11,797 ERROR org.dspace.statistics.SolrLoggerServiceImpl @ Unable to get location of request:  The address 0:0:0:0:0:0:0:1 is not in the database.
+2019-11-26 15:27:15,553 INFO  org.dspace.usage.LoggerUsageEventListener @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=d6d1f606-ace9-42f5-a3ab-27ddb109f851
+2019-11-26 15:27:15,601 ERROR org.dspace.statistics.SolrLoggerServiceImpl @ Unable to get location of request:  The address 0:0:0:0:0:0:0:1 is not in the database.
+2019-11-26 15:27:55,618 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:browse_by_value:focus=null
+2019-11-26 15:27:55,627 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.ConfigurableBrowse @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:browse:org.dspace.app.xmlui.utils.DSpaceValidity@5e8bc02a
+2019-11-26 15:28:06,016 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:browse_by_value:focus=null
+2019-11-26 15:28:06,023 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.ConfigurableBrowse @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:browse:org.dspace.app.xmlui.utils.DSpaceValidity@3f0e1aa6
+2019-11-26 15:28:06,962 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:browse_by_item:
+2019-11-26 15:28:07,003 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.ConfigurableBrowse @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:browse:org.dspace.app.xmlui.utils.DSpaceValidity@66d9b566
+2019-11-26 15:28:10,618 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2019-11-26 15:28:12,915 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:browse_by_item:
+2019-11-26 15:28:12,976 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.ConfigurableBrowse @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:browse:org.dspace.app.xmlui.utils.DSpaceValidity@2633a044
+2019-11-26 15:34:49,612 INFO  org.dspace.authenticate.PasswordAuthentication @ anonymous:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:authenticate:attempting password auth of user=galileoga63@gmail.com
+2019-11-26 15:34:49,614 INFO  org.dspace.authenticate.PasswordAuthentication @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:authenticate:type=PasswordAuthentication
+2019-11-26 15:34:49,614 INFO  org.dspace.eperson.EPersonServiceImpl @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:update_eperson:eperson_id=be95e2da-b7d4-429e-ae91-e70526f7a795
+2019-11-26 15:34:49,614 INFO  org.dspace.app.xmlui.utils.AuthenticationUtil @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:login:type=explicit
+2019-11-26 15:34:49,745 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ galileoga63@gmail.com:session_id=EFF8E32BD3455D5DA1409123D3B6042C:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
