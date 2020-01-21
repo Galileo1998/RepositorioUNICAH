@@ -93,9 +93,8 @@
             <div id="ds-footer-logo"></div>
             </a>
             <p style="width: 674px;">
-                This website is using Manakin, a new front end for DSpace created by Texas A&amp;M University 
-                Libraries. The interface can be extensively modified through Manakin Aspects and Themes. 
-                For more information you may visit 
+                Este WebSite utiliza Manakin, creado por Texas A&amp;M University 
+                Libraries. 
                 <a href="http://di.tamu.edu">http://di.tamu.edu</a> and
                 <a href="http://dspace.org">http://dspace.org</a>     
             </p>
@@ -778,7 +777,7 @@
                                 <xsl:if test="count(following-sibling::dim:field[@element='contributor'][@qualifier='author']) != 0">
                                     <xsl:text>; </xsl:text>
                                 </xsl:if>
-                            </xsl:for-each>
+                            </xsl:for-each>Comunidades en DSpace
                         </xsl:when>
                         <xsl:when test="dim:field[@element='creator']">
                             <xsl:for-each select="dim:field[@element='creator']">

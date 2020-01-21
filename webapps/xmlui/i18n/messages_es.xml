@@ -24,7 +24,8 @@
     <!--  v1.8, V4 & V5 messages translated by Eva Braña (ebrana@arvo.es) and Emilio Lorenzo (elorenzo@arvo.es) at Arvo Consultores (http://www.arvo.es/)   -->
 	           
 <!-- General keys -->
-<message key="xmlui.general.dspace_home">DSpace Principal</message>
+<message key="xmlui.general.universidad">Universidad Católica de Honduras</message>
+<message key="xmlui.general.dspace_home">Theotokos Principal</message>
 <message key="xmlui.general.search">Búsquedas</message>
 <message key="xmlui.general.go">Ir</message>
 <message key="xmlui.general.go_home">Ir a página principal DSpace</message>
@@ -200,7 +201,7 @@
 	<!-- org.dspace.app.xmlui.artifactbrowser.CommunityBrowser.java -->
 <message key="xmlui.ArtifactBrowser.CommunityBrowser.title">Lista de comunidades</message>
 <message key="xmlui.ArtifactBrowser.CommunityBrowser.trail">Lista de comunidades</message>
-<message key="xmlui.ArtifactBrowser.CommunityBrowser.head">Comunidades en DSpace</message>
+<message key="xmlui.ArtifactBrowser.CommunityBrowser.head">Comunidades en Theotokos</message>
 <message key="xmlui.ArtifactBrowser.CommunityBrowser.select">Elija una comunidad para listar sus colecciones</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.CommunityViewer.java -->
@@ -2154,13 +2155,14 @@ Para más infomación, visite
 <message key="xmlui.dri2xhtml.structural.contact-link">Contacto</message>
 <message key="xmlui.dri2xhtml.structural.feedback-link">Sugerencias</message>
 
-<message key="xmlui.dri2xhtml.structural.head-subtitle">UNICAH Dspace </message>
+<message key="xmlui.dri2xhtml.structural.head-subtitle"> THEOTOKOS</message>
 
 <message key="xmlui.dri2xhtml.structural.profile">Perfil:</message>
-<message key="xmlui.dri2xhtml.structural.logout">Logout</message>
-<message key="xmlui.dri2xhtml.structural.login">Login</message>
+<message key="xmlui.dri2xhtml.structural.logout">Cerrar Sesión</message>
+<message key="xmlui.dri2xhtml.structural.login">Iniciar Sesión</message>
+<message key="xmlui.dri2xhtml.structural.universidad">UNIVERSIDAD CATÓLICA DE HONDURAS</message>
 
-<message key="xmlui.dri2xhtml.structural.search">Buscar en DSpace</message>
+<message key="xmlui.dri2xhtml.structural.search">Buscar en Theotokos</message>
 <message key="xmlui.dri2xhtml.structural.search-advanced">Búsqueda avanzada</message>
 <message key="xmlui.dri2xhtml.structural.search-in-community">Esta comunidad</message>
 <message key="xmlui.dri2xhtml.structural.search-in-collection">Esta colección</message>

@@ -350,7 +350,7 @@
             <ul id="ds-trail">
                 <xsl:choose>
                         <xsl:when test="starts-with($request-uri, 'page/about')">
-                            <xsl:text>About This Repository</xsl:text>
+                            <xsl:text>Acerca de este repositorio</xsl:text>
                         </xsl:when>
                         <xsl:when test="count(/dri:document/dri:meta/dri:pageMeta/dri:trail) = 0">
                                 <li class="ds-trail-link first-link"> - </li>
@@ -365,6 +365,7 @@
             <xsl:choose>
                 <xsl:when test="/dri:document/dri:meta/dri:userMeta/@authenticated = 'yes'">
                     <div id="ds-user-box">
+
                         <p>
                             <a>
                                 <xsl:attribute name="href">
@@ -396,6 +397,7 @@
                     <div id="ds-user-box">
                         <p>
                             <a>
+                               
                                 <xsl:attribute name="href">
                                     <xsl:value-of select="/dri:document/dri:meta/dri:userMeta/
                                         dri:metadata[@element='identifier' and @qualifier='loginURL']"/>
@@ -404,6 +406,7 @@
                             </a>
                         </p>
                         <p>
+    
                             <xsl:call-template name="languageSelection" />
                         </p>
                     </div>
