@@ -3905,3 +3905,5 @@ java.lang.NumberFormatException: For input string: "be95e2da-b7d4-429e-ae91-e705
 2020-01-27 15:59:21,841 INFO  org.apache.solr.core.SolrCore @ [statistics] webapp=/solr path=/select params={q=statistics_type:workflow+AND+NOT(previousWorkflowStep:+SUBMIT)&shards=localhost:8080/solr/statistics&facet.limit=0&facet.mincount=1&fq=-isBot:true&fq=-(bundleName:[*+TO+*]-bundleName:ORIGINAL)&sort=time+asc&rows=1&wt=javabin&version=2} hits=4 status=0 QTime=26 
 2020-01-27 16:04:24,222 INFO  org.apache.solr.servlet.SolrDispatchFilter @ [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1580162664209} status=0 QTime=6 
 2020-01-27 16:04:24,352 INFO  org.apache.solr.servlet.SolrDispatchFilter @ [admin] webapp=null path=/admin/info/system params={wt=json&_=1580162664251} status=0 QTime=15 
+2020-01-27 16:04:31,405 INFO  org.apache.solr.servlet.SolrDispatchFilter @ [admin] webapp=null path=/admin/cores params={wt=json&_=1580162671223} status=0 QTime=34 
+2020-01-27 16:04:31,525 INFO  org.apache.solr.servlet.SolrDispatchFilter @ [admin] webapp=null path=/admin/cores params={wt=json&_=1580162671424} status=0 QTime=32 
