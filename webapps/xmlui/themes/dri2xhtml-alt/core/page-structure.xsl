@@ -341,7 +341,7 @@
                 <xsl:otherwise>
                     <div id="ds-user-box">
                         <p>
-                           <a>
+                            <a>
                                 <xsl:attribute name="href">
                                     <xsl:value-of select="/dri:document/dri:meta/dri:userMeta/
                                         dri:metadata[@element='identifier' and @qualifier='loginURL']"/>

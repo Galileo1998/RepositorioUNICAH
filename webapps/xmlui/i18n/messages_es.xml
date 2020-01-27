@@ -24,7 +24,6 @@
     <!--  v1.8, V4 & V5 messages translated by Eva Braña (ebrana@arvo.es) and Emilio Lorenzo (elorenzo@arvo.es) at Arvo Consultores (http://www.arvo.es/)   -->
 	           
 <!-- General keys -->
-<message key="xmlui.general.universidad">Universidad Católica de Honduras</message>
 <message key="xmlui.general.dspace_home">Theotokos Principal</message>
 <message key="xmlui.general.search">Búsquedas</message>
 <message key="xmlui.general.go">Ir</message>
@@ -201,12 +200,12 @@
 	<!-- org.dspace.app.xmlui.artifactbrowser.CommunityBrowser.java -->
 <message key="xmlui.ArtifactBrowser.CommunityBrowser.title">Lista de comunidades</message>
 <message key="xmlui.ArtifactBrowser.CommunityBrowser.trail">Lista de comunidades</message>
-<message key="xmlui.ArtifactBrowser.CommunityBrowser.head">Comunidades en Theotokos</message>
+<message key="xmlui.ArtifactBrowser.CommunityBrowser.head">Comunidades en DSpace</message>
 <message key="xmlui.ArtifactBrowser.CommunityBrowser.select">Elija una comunidad para listar sus colecciones</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.CommunityViewer.java -->
 <message key="xmlui.ArtifactBrowser.CommunityViewer.search_scope">Ámbito de búsqueda</message>
-<message key="xmlui.ArtifactBrowser.CommunityViewer.all_of_dspace">Todo DSpace</message>
+<message key="xmlui.ArtifactBrowser.CommunityViewer.all_of_dspace">Todo Theotokos</message>
 <message key="xmlui.ArtifactBrowser.CommunityViewer.full_text_search">Buscar en esta comunidad y sus colecciones:</message>
 <message key="xmlui.ArtifactBrowser.CommunityViewer.head_browse">Listar por</message>
 <message key="xmlui.ArtifactBrowser.CommunityViewer.browse_titles">Títulos</message>
@@ -321,7 +320,7 @@
 <message key="xmlui.ArtifactBrowser.ItemRequestForm.trail">Solicitar una copia del documento</message>
 <message key="xmlui.ArtifactBrowser.ItemRequestForm.head">Solicitar una copia del documento</message>
 <message key="xmlui.ArtifactBrowser.ItemRequestForm.login_para">Los usuarios de este sistema, pueden hacer login para ver este documento.</message>
-<message key="xmlui.ArtifactBrowser.ItemRequestForm.login">Login</message>
+<message key="xmlui.ArtifactBrowser.ItemRequestForm.login">Iniciar Sesión</message>
 <message key="xmlui.ArtifactBrowser.ItemRequestForm.para1">Introducir la siguiente información para solicitar una copia del documento a la persona responsable.</message>
 <message key="xmlui.ArtifactBrowser.ItemRequestForm.requesterEmail">Su dirección de correo electrónico</message>
 <message key="xmlui.ArtifactBrowser.ItemRequestForm.requesterEmail_help">Esta dirección de correo electrónico es usada para enviar el documento.</message>
@@ -2155,14 +2154,13 @@ Para más infomación, visite
 <message key="xmlui.dri2xhtml.structural.contact-link">Contacto</message>
 <message key="xmlui.dri2xhtml.structural.feedback-link">Sugerencias</message>
 
-<message key="xmlui.dri2xhtml.structural.head-subtitle"> THEOTOKOS</message>
+<message key="xmlui.dri2xhtml.structural.head-subtitle">Repositorio Dspace </message>
 
 <message key="xmlui.dri2xhtml.structural.profile">Perfil:</message>
-<message key="xmlui.dri2xhtml.structural.logout">Cerrar Sesión</message>
-<message key="xmlui.dri2xhtml.structural.login">Iniciar Sesión</message>
-<message key="xmlui.dri2xhtml.structural.universidad">UNIVERSIDAD CATÓLICA DE HONDURAS</message>
+<message key="xmlui.dri2xhtml.structural.logout">Logout</message>
+<message key="xmlui.dri2xhtml.structural.login">Login</message>
 
-<message key="xmlui.dri2xhtml.structural.search">Buscar en Theotokos</message>
+<message key="xmlui.dri2xhtml.structural.search">Buscar en DSpace</message>
 <message key="xmlui.dri2xhtml.structural.search-advanced">Búsqueda avanzada</message>
 <message key="xmlui.dri2xhtml.structural.search-in-community">Esta comunidad</message>
 <message key="xmlui.dri2xhtml.structural.search-in-collection">Esta colección</message>

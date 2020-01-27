@@ -7,18 +7,17 @@
  */
 body {
 background:#D5D6D7 url(../../images/kubrickbgcolor.jpg) repeat scroll 0%;
-color:#000;
+color:#333333;
 font-family:'Lucida Grande',Verdana,Arial,Sans-Serif;
 font-size:62.5%;
 text-align:center;
 margin:0pt 0pt 20px;
 padding:0pt;
-width: 100%;
 }
 #page {
 text-align:left;
 /*background-color:white;*/
-border:1px solid #959596;
+/*border:1px solid #959596;*/
 margin:8px auto;
 padding:0pt;
 width:960px;
@@ -26,19 +25,16 @@ background:transparent url(../../images/kubrickbg.jpg) repeat-y scroll center to
 border:medium none;
 }
 #ds-header {
-/*background:/*#73A0C5*/ /*url(../../images/kubrickheader.jpg) /*no-repeat*/ /*repeat-y scroll center bottom;*/
-background:#002a80 repeat-y scroll center bottom;
-align-items: center;
+background:/*#73A0C5*/ url(../../images/kubrickheader.jpg) /*no-repeat*/ repeat-y scroll center bottom;
+/*background-color:#73A0C5;*/
 height:140px;
-margin:0pt 0px 0px 10px;
-color: #fff;
-border-radius: 5px;
-padding: 0pt -0px 0px 0px;
-width: 98%;
+margin:0pt 0pt 0pt 1px;
+padding:0pt;
+width:958px;
 }
 #headerimg {
 height:192px;
-margin:0px 9px 0pt;
+margin:7px 9px 0pt;
 width:940px;
 height:200px;
 margin:0pt;
@@ -78,7 +74,6 @@ text-align:center;
 .ds-trail-link
 {
     display: inline;
-    color: #fff;
     padding: 1px;
 }
 a.trail_anchor
@@ -93,17 +88,11 @@ a.trail_anchor
     width: 900px;
     top: -145px;
     left: 28px;
-    color: #fff;
 }
 #ds-user-box p
 {
     text-align: right;   
-    color: #fff;
-}
-
-#ds-user-box a
-{
-    color: #fff;
+    color: white;
 }
 #content {
 font-size:1.2em;

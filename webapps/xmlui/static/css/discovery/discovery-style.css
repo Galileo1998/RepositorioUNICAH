@@ -29,11 +29,11 @@ div.controls-gear-wrapper .discovery-controls-gear{
 ul.gear-selection{
     margin: 0 2px 0 0;
     list-style: none;
-    background-color: #1a66ff;
+    background-color: #FFFFFF;
     position: absolute;
     right: 0;
     z-index: 999;
-    border: 1px solid #1a66ff;
+    border: 1px solid #EBEBEB;
     padding: 0;
     /*Hidden by default*/
     display: none;
@@ -70,7 +70,7 @@ ul.gear-selection li {
 
 ul.gear-selection li.gear-head{
     padding: 5px;
-    border-top: 1px solid #1a66ff;
+    border-top: 1px solid #EBEBEB;
 }
 
 ul.gear-selection li.gear-head.first{
@@ -85,11 +85,11 @@ ul.gear-selection li.gear-option{
 }
 
 ul.gear-selection li.gear-option:hover{
-    background-color: #1a66ff;
+    background-color: #EBEBEB;
 }
 
 ul.gear-selection li.gear-option a{
-    color: #1a66ff;
+    color: #444444;
     text-decoration: none;
 }
 
