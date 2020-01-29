@@ -2408,7 +2408,7 @@
                 <xsl:apply-templates select="dri:field/dri:help" mode="compositeComponent"/>
                 <!--<xsl:apply-templates select="dri:help" mode="compositeComponent"/>-->
             </xsl:when>
-                    <!-- text, password, file, and hidden types are handled the same.
+                    <!-- text, ord, file, and hidden types are handled the same.
                         Buttons: added the xsl:if check which will override the type attribute button
                             with the value 'submit'. No reset buttons for now...
                     -->

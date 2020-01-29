@@ -190,7 +190,7 @@ ArtifactBrowser Aspect
 <!-- org.dspace.app.xmlui.artifactbrowser.CommunityBrowser.java -->
 <message key="xmlui.ArtifactBrowser.CommunityBrowser.title">Listaxe de comunidades</message>
 <message key="xmlui.ArtifactBrowser.CommunityBrowser.trail">Listaxe de comunidades</message>
-<message key="xmlui.ArtifactBrowser.CommunityBrowser.head">Comunidades en DSpace</message>
+<message key="xmlui.ArtifactBrowser.CommunityBrowser.head">Comunidades en Theotokos</message>
 <message key="xmlui.ArtifactBrowser.CommunityBrowser.select">Escolla unha comunidade para listar as súas coleccións</message>
 
 <!-- org.dspace.app.xmlui.artifactbrowser.CommunityViewer.java -->

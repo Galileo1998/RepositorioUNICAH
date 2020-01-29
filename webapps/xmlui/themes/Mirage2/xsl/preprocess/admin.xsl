@@ -208,8 +208,8 @@
         </div>
 
     </xsl:template>
-
-    <xsl:template match="dri:field[@id='aspect.eperson.PasswordLogin.field.submit']">
+    
+    <xsl:template match="dri:field[@id='aspect.eperson..field.submit']">
         <p>
             <xsl:copy-of select="."/>
         </p>

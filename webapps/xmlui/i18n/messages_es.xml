@@ -70,6 +70,10 @@
 <message key="xmlui.feed.logo_title">Imagen</message>
 <message key="xmlui.feed.untitled">Sin título</message>
 
+<message key="xmlui.redes.header">Redes Sociales</message>
+
+
+
 	<!--
 		Default notice header
 	 	-->
@@ -97,7 +101,7 @@
 <message key="xmlui.ArtifactBrowser.AbstractSearch.head2">Comunidades o colecciones que coinciden con la petición</message>
 <message key="xmlui.ArtifactBrowser.AbstractSearch.head3">Ítems que coinciden con la petición</message>
 <message key="xmlui.ArtifactBrowser.AbstractSearch.no_results">La búsqueda no produjo resultados</message>
-<message key="xmlui.ArtifactBrowser.AbstractSearch.all_of_dspace">Todo DSpace</message>
+<message key="xmlui.ArtifactBrowser.AbstractSearch.all_of_dspace">Todo Theotokos</message>
 
 <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.title">título</message>
 <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.dateissued">fecha de publicación</message>
@@ -188,7 +192,7 @@
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.CollectionViewer.java -->
 <message key="xmlui.ArtifactBrowser.CollectionViewer.search_scope">Ámbito de búsqueda</message>
-<message key="xmlui.ArtifactBrowser.CollectionViewer.all_of_dspace">Todo DSpace</message>
+<message key="xmlui.ArtifactBrowser.CollectionViewer.all_of_dspace">Todo Theotokos</message>
 <message key="xmlui.ArtifactBrowser.CollectionViewer.full_text_search">Búsqueda en esta colección:</message>
 <message key="xmlui.ArtifactBrowser.CollectionViewer.head_browse">Listar por</message>
 <message key="xmlui.ArtifactBrowser.CollectionViewer.browse_titles">Títulos</message>
@@ -200,7 +204,7 @@
 	<!-- org.dspace.app.xmlui.artifactbrowser.CommunityBrowser.java -->
 <message key="xmlui.ArtifactBrowser.CommunityBrowser.title">Lista de comunidades</message>
 <message key="xmlui.ArtifactBrowser.CommunityBrowser.trail">Lista de comunidades</message>
-<message key="xmlui.ArtifactBrowser.CommunityBrowser.head">Comunidades en DSpace</message>
+<message key="xmlui.ArtifactBrowser.CommunityBrowser.head">Comunidades en Theotokos</message>
 <message key="xmlui.ArtifactBrowser.CommunityBrowser.select">Elija una comunidad para listar sus colecciones</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.CommunityViewer.java -->
@@ -221,7 +225,7 @@
 <message key="xmlui.ArtifactBrowser.Contact.title">Contacto</message>
 <message key="xmlui.ArtifactBrowser.Contact.trail">Contacto</message>
 <message key="xmlui.ArtifactBrowser.Contact.head">Contacto</message>
-<message key="xmlui.ArtifactBrowser.Contact.para1">Puede contactar con el administrador de {0} en:</message>
+<message key="xmlui.ArtifactBrowser.Contact.para1">Puede contactar con el administrador de Theotokos Repositorio en:</message>
 <message key="xmlui.ArtifactBrowser.Contact.feedback_label">Formulario en línea</message>
 <message key="xmlui.ArtifactBrowser.Contact.feedback_link">Sugerencias</message>
 <message key="xmlui.ArtifactBrowser.Contact.email">Correo electrónico</message>
@@ -230,7 +234,7 @@
 <message key="xmlui.ArtifactBrowser.FeedbackForm.title">Sugerencias</message>
 <message key="xmlui.ArtifactBrowser.FeedbackForm.trail">Sugerencias</message>
 <message key="xmlui.ArtifactBrowser.FeedbackForm.head">Sugerencias</message>
-<message key="xmlui.ArtifactBrowser.FeedbackForm.para1">Gracias por compartir sus sugerencias sobre DSpace. ¡Tendremos en cuenta sus comentarios!</message>
+<message key="xmlui.ArtifactBrowser.FeedbackForm.para1">Gracias por compartir sus sugerencias sobre Theotokos Repositorio. ¡Tendremos en cuenta sus comentarios!</message>
 <message key="xmlui.ArtifactBrowser.FeedbackForm.email">Su correo electrónico</message>
 <message key="xmlui.ArtifactBrowser.FeedbackForm.email_help">Esta dirección será utilizada para seguimiento de su sugerencia.</message>
 <message key="xmlui.ArtifactBrowser.FeedbackForm.comments">Comentarios</message>
@@ -252,7 +256,7 @@
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.Navigation.java -->
 <message key="xmlui.ArtifactBrowser.Navigation.head_browse">Listar</message>
-<message key="xmlui.ArtifactBrowser.Navigation.head_all_of_dspace">Todo DSpace</message>
+<message key="xmlui.ArtifactBrowser.Navigation.head_all_of_dspace">Todo Theotokos</message>
 <message key="xmlui.ArtifactBrowser.Navigation.communities_and_collections">Comunidades &amp; Colecciones</message>
 <message key="xmlui.ArtifactBrowser.Navigation.browse_title">Títulos</message>
 <message key="xmlui.ArtifactBrowser.Navigation.browse_author">Autores</message>
@@ -498,20 +502,21 @@
 	<!-- org.dspace.app.xmlui.eperson.PasswordLogin.java -->
 <message key="xmlui.EPerson.PasswordLogin.title">Acceder</message>
 <message key="xmlui.EPerson.PasswordLogin.trail">Acceder</message>
-<message key="xmlui.EPerson.PasswordLogin.head1">Acceder a DSpace</message>
+<message key="xmlui.EPerson.PasswordLogin.head1">Acceder a Theotokos</message>
 <message key="xmlui.EPerson.PasswordLogin.email_address">Correo electrónico</message>
 <message key="xmlui.EPerson.PasswordLogin.error_bad_login">La dirección de correo electrónico introducida y/o la contraseña no son válidas.</message>
 <message key="xmlui.EPerson.PasswordLogin.password">Contraseña</message>
 <message key="xmlui.EPerson.PasswordLogin.forgot_link">¿Olvidó su contraseña?</message>
 <message key="xmlui.EPerson.PasswordLogin.submit">Acceder</message>
+<!--
 <message key="xmlui.EPerson.PasswordLogin.head2">Registrar un nuevo usuario</message>
 <message key="xmlui.EPerson.PasswordLogin.para1">Registre una cuenta para suscribirse a las colecciones, para recibir notificación de modificaciones y de nuevas adquisiciones de ítems en DSpace.</message>
-<message key="xmlui.EPerson.PasswordLogin.register_link">Pulse aquí para registrarse.</message>
+<message key="xmlui.EPerson.PasswordLogin.register_link">Pulse aquí para registrarse.</message>-->
 
 	<!-- org.dspace.app.xmlui.eperson.LDAPLogin.java -->
 <message key="xmlui.EPerson.LDAPLogin.title">Acceder</message>
 <message key="xmlui.EPerson.LDAPLogin.trail">Acceder</message>
-<message key="xmlui.EPerson.LDAPLogin.head1">Acceder a DSpace</message>
+<message key="xmlui.EPerson.LDAPLogin.head1">Acceder a Theotokos</message>
 <message key="xmlui.EPerson.LDAPLogin.username">Nombre de usuario</message>
 <message key="xmlui.EPerson.LDAPLogin.error_bad_login">El nombre de usuario o la contraseña no son validos</message>
 <message key="xmlui.EPerson.LDAPLogin.password">Contraseña</message>
@@ -2157,10 +2162,10 @@ Para más infomación, visite
 <message key="xmlui.dri2xhtml.structural.head-subtitle">Repositorio Dspace </message>
 
 <message key="xmlui.dri2xhtml.structural.profile">Perfil:</message>
-<message key="xmlui.dri2xhtml.structural.logout">Logout</message>
-<message key="xmlui.dri2xhtml.structural.login">Login</message>
+<message key="xmlui.dri2xhtml.structural.logout">Cerrar Sesión</message>
+<message key="xmlui.dri2xhtml.structural.login">Iniciar Sesión</message>
 
-<message key="xmlui.dri2xhtml.structural.search">Buscar en DSpace</message>
+<message key="xmlui.dri2xhtml.structural.search">Buscar en Theotokos</message>
 <message key="xmlui.dri2xhtml.structural.search-advanced">Búsqueda avanzada</message>
 <message key="xmlui.dri2xhtml.structural.search-in-community">Esta comunidad</message>
 <message key="xmlui.dri2xhtml.structural.search-in-collection">Esta colección</message>

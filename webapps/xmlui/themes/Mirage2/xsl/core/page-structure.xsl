@@ -157,7 +157,7 @@
             <link rel="shortcut icon">
                 <xsl:attribute name="href">
                     <xsl:value-of select="$theme-path"/>
-                    <xsl:text>images/favicon.ico</xsl:text>
+                    <xsl:text>images/redesSociales/UNICAH.ico</xsl:text>
                 </xsl:attribute>
             </link>
             <link rel="apple-touch-icon">
@@ -201,7 +201,8 @@
             </xsl:for-each>
 
             <link rel="stylesheet" href="{concat($theme-path, 'styles/main.css')}"/>
-
+            <!--Mi css Galileo-->
+            <link rel="stylesheet" href="{concat($theme-path, 'styles/unicah.css')}"/>
             <!-- Add syndication feeds -->
             <xsl:for-each select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='feed']">
                 <link rel="alternate" type="application">
@@ -342,10 +343,11 @@
                             <span class="icon-bar"></span>
                         </button>
 
-                        <a href="{$context-path}/" class="navbar-brand">
-                            <img src="{$theme-path}images/DSpace-logo-line.svg" />
+                         <a  href="{$context-path}/" class="ds-option" style="color: white; font-size: 125%;">
+                            <img src="{$theme-path}images/redesSociales/SIN_FONDO.jpg" width="50px" height="50px"/>
+                            UNIVERSIDAD CATÓLICA DE HONDURAS
                         </a>
-
+        
 
                         <div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
                         <ul class="nav nav-pills pull-left ">
@@ -444,7 +446,7 @@
                                             <li>
                                                 <a href="{/dri:document/dri:meta/dri:userMeta/
                             dri:metadata[@element='identifier' and @qualifier='url']}">
-                                                    <i18n:text>xmlui.EPerson.Navigation.profile</i18n:text>
+                                                    <i18n:text>.Navigation.profile</i18n:text>
                                                 </a>
                                             </li>
                                             <li>
@@ -478,6 +480,8 @@
                     </div>
                 </div>
             </div>
+                 <img src="{$theme-path}images/redesSociales/virgen2.jpg" width="100%" height="75%">
+                </img>
 
         </header>
 
@@ -702,7 +706,7 @@
                     <hr/>
                     <div class="col-xs-7 col-sm-8">
                         <div>
-                            <a href="http://www.dspace.org/" target="_blank">DSpace software</a> copyright&#160;&#169;&#160;2002-2016&#160; <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+                            <a href="http://www.unicah.edu/" target="_blank">Universidad Católica de Honduras</a> copyright&#160;&#169;&#160;2020&#160; <a href="http://www.unicah.edu/" target="_blank"></a>
                         </div>
                         <div class="hidden-print">
                             <a>

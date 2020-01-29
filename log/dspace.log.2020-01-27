@@ -3774,3 +3774,44 @@ To avoid this warning consider using the CacheManager factory methods to create 
 2020-01-27 18:24:42,728 INFO  org.dspace.app.xmlui.configuration.XMLUIConfiguration @ Aspect Installed: name='Original Workflow', path='resource://aspects/Workflow/'.
 2020-01-27 18:24:42,729 INFO  org.dspace.app.xmlui.configuration.XMLUIConfiguration @ Theme Installed: name='Atmire Mirage Theme', path='Mirage2/', id='null', regex='.*', handle='null'.
 2020-01-27 18:25:11,601 INFO  org.dspace.eperson.AccountServiceImpl @ Sent account information to galileoga63@gmail.com
+2020-01-27 18:35:12,445 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ anonymous:session_id=7F6F2639F1304377B21F7DAF77195AFD:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2020-01-27 18:39:51,359 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ anonymous:session_id=7F6F2639F1304377B21F7DAF77195AFD:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2020-01-27 18:40:15,616 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ anonymous:session_id=7F6F2639F1304377B21F7DAF77195AFD:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2020-01-27 18:41:10,222 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ anonymous:session_id=7F6F2639F1304377B21F7DAF77195AFD:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2020-01-27 18:41:21,257 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ anonymous:session_id=7F6F2639F1304377B21F7DAF77195AFD:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2020-01-27 18:42:19,207 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ anonymous:session_id=7F6F2639F1304377B21F7DAF77195AFD:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2020-01-27 18:43:17,133 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ anonymous:session_id=7F6F2639F1304377B21F7DAF77195AFD:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2020-01-27 18:43:21,309 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ anonymous:session_id=7F6F2639F1304377B21F7DAF77195AFD:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2020-01-27 18:44:00,052 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ anonymous:session_id=7F6F2639F1304377B21F7DAF77195AFD:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2020-01-27 18:44:50,956 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ anonymous:session_id=7F6F2639F1304377B21F7DAF77195AFD:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2020-01-27 18:45:40,169 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ anonymous:session_id=7F6F2639F1304377B21F7DAF77195AFD:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2020-01-27 18:46:03,431 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ anonymous:session_id=7F6F2639F1304377B21F7DAF77195AFD:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2020-01-27 18:49:03,097 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ anonymous:session_id=7F6F2639F1304377B21F7DAF77195AFD:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2020-01-27 18:49:34,151 INFO  org.dspace.authenticate.PasswordAuthentication @ anonymous:session_id=7F6F2639F1304377B21F7DAF77195AFD:ip_addr=0:0:0:0:0:0:0:1:authenticate:attempting password auth of user=galileoga63@gmail.com
+2020-01-27 18:49:34,753 INFO  org.dspace.authenticate.PasswordAuthentication @ galileoga63@gmail.com:session_id=7F6F2639F1304377B21F7DAF77195AFD:ip_addr=0:0:0:0:0:0:0:1:authenticate:type=PasswordAuthentication
+2020-01-27 18:49:34,753 INFO  org.dspace.eperson.EPersonServiceImpl @ galileoga63@gmail.com:session_id=7F6F2639F1304377B21F7DAF77195AFD:ip_addr=0:0:0:0:0:0:0:1:update_eperson:eperson_id=be95e2da-b7d4-429e-ae91-e70526f7a795
+2020-01-27 18:49:34,753 INFO  org.dspace.app.xmlui.utils.AuthenticationUtil @ galileoga63@gmail.com:session_id=7F6F2639F1304377B21F7DAF77195AFD:ip_addr=0:0:0:0:0:0:0:1:login:type=explicit
+2020-01-27 18:49:35,087 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ galileoga63@gmail.com:session_id=7F6F2639F1304377B21F7DAF77195AFD:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2020-01-27 18:49:44,201 INFO  org.dspace.statistics.util.SpiderDetectorServiceImpl @ Loaded pattern file:  c:\dspace\config\spiders\agents\example
+2020-01-27 18:49:44,202 INFO  org.dspace.statistics.util.SpiderDetectorServiceImpl @ Loaded pattern file:  c:\dspace\config\spiders\agents\iplists.com-non_engines
+2020-01-27 18:49:44,206 INFO  org.dspace.statistics.util.SpiderDetectorServiceImpl @ Loaded Spider IP file: c:\dspace\config\spiders\iplists.com-altavista.txt
+2020-01-27 18:49:44,206 INFO  org.dspace.statistics.util.SpiderDetectorServiceImpl @ Loaded Spider IP file: c:\dspace\config\spiders\iplists.com-excite.txt
+2020-01-27 18:49:44,209 INFO  org.dspace.statistics.util.SpiderDetectorServiceImpl @ Loaded Spider IP file: c:\dspace\config\spiders\iplists.com-google.txt
+2020-01-27 18:49:44,210 INFO  org.dspace.statistics.util.SpiderDetectorServiceImpl @ Loaded Spider IP file: c:\dspace\config\spiders\iplists.com-infoseek.txt
+2020-01-27 18:49:44,213 INFO  org.dspace.statistics.util.SpiderDetectorServiceImpl @ Loaded Spider IP file: c:\dspace\config\spiders\iplists.com-inktomi.txt
+2020-01-27 18:49:44,213 INFO  org.dspace.statistics.util.SpiderDetectorServiceImpl @ Loaded Spider IP file: c:\dspace\config\spiders\iplists.com-lycos.txt
+2020-01-27 18:49:44,217 INFO  org.dspace.statistics.util.SpiderDetectorServiceImpl @ Loaded Spider IP file: c:\dspace\config\spiders\iplists.com-misc.txt
+2020-01-27 18:49:44,218 INFO  org.dspace.statistics.util.SpiderDetectorServiceImpl @ Loaded pattern file:  c:\dspace\config\spiders\domains\example
+2020-01-27 18:49:44,613 ERROR org.dspace.statistics.SolrLoggerServiceImpl @ Unable to get location of request:  The address 0:0:0:0:0:0:0:1 is not in the database.
+2020-01-27 18:49:44,839 INFO  org.dspace.app.xmlui.aspect.discovery.AbstractSearch @ galileoga63@gmail.com:session_id=7F6F2639F1304377B21F7DAF77195AFD:ip_addr=0:0:0:0:0:0:0:1:search:query="null",results=(0,0,0)
+2020-01-27 18:49:44,913 INFO  org.dspace.app.xmlui.aspect.discovery.CSVExportDiscoveryNavigation @ uri: discover
+2020-01-27 18:49:44,913 INFO  org.dspace.app.xmlui.aspect.discovery.CSVExportDiscoveryNavigation @ query: *
+2020-01-27 18:49:44,913 INFO  org.dspace.app.xmlui.aspect.discovery.CSVExportDiscoveryNavigation @ scope: ~
+2020-01-27 18:49:44,913 INFO  org.dspace.app.xmlui.aspect.discovery.CSVExportDiscoveryNavigation @ filters: has_content_in_original_bundle_keyword:true
+2020-01-27 18:52:51,551 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ galileoga63@gmail.com:session_id=7F6F2639F1304377B21F7DAF77195AFD:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2020-01-27 18:53:19,513 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ galileoga63@gmail.com:session_id=7F6F2639F1304377B21F7DAF77195AFD:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2020-01-27 18:53:23,075 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ galileoga63@gmail.com:session_id=7F6F2639F1304377B21F7DAF77195AFD:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2020-01-27 18:53:24,645 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ galileoga63@gmail.com:session_id=7F6F2639F1304377B21F7DAF77195AFD:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2020-01-27 18:53:26,272 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ galileoga63@gmail.com:session_id=7F6F2639F1304377B21F7DAF77195AFD:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2020-01-27 18:53:47,351 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ galileoga63@gmail.com:session_id=7F6F2639F1304377B21F7DAF77195AFD:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2020-01-27 18:54:18,142 INFO  org.dspace.app.xmlui.aspect.artifactbrowser.CommunityBrowser @ galileoga63@gmail.com:session_id=7F6F2639F1304377B21F7DAF77195AFD:ip_addr=0:0:0:0:0:0:0:1:view_community_list:

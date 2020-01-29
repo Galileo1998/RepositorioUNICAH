@@ -123,8 +123,27 @@
                 </div>
             </xsl:if>
             <xsl:apply-templates/>
+
+                  <div>
+                  <a class="list-group-item active">
+                  <span class="h5 list-group-item-heading h5">
+                        <i18n:text>xmlui.redes.header</i18n:text>             
+                  </span>
+                  </a>
+                    <div>
+                        <a href="https://www.facebook.com/UNICAHONDURAS" class="list-group-item ds-option">
+                        <img src="{$theme-path}images/redesSociales/facebook.png" width="25px"/>
+                        Facebook</a>
+                        <a href="https://twitter.com/UNICAH_HN" class="list-group-item ds-option">
+                        <img src="{$theme-path}images/redesSociales/twitter.png" width="25px"/>
+                        Twitter</a>
+                        <a href="https://www.instagram.com/unicah_hn/" class="list-group-item ds-option">
+                        <img src="{$theme-path}images/redesSociales/instagram.png" width="25px"/>
+                        Instagram</a>
+                    </div>
+                </div>
             <!-- DS-984 Add RSS Links to Options Box -->
-            <xsl:if test="count(/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='feed']) != 0">
+            <!--<xsl:if test="count(/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='feed']) != 0">
                 <div>
                     <h2 class="ds-option-set-head h6">
                         <i18n:text>xmlui.feed.header</i18n:text>
@@ -134,7 +153,7 @@
                     </div>
                 </div>
 
-            </xsl:if>
+            </xsl:if>-->
         </div>
     </xsl:template>
 
