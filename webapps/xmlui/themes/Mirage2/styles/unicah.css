@@ -1,9 +1,47 @@
 ﻿header .navbar-default
 {
    background-color: #002a80; 
+   height: 75px;
 }
 
-div .list-group
+span .list-group-item-heading
 {
     background-color: #002a80; 
 }
+
+a .active
+{
+    background-color: #002a80; 
+}
+
+a.list-group-item.active
+{
+    background-color:#002a80;
+    text-decoration:none
+}
+
+button.ds-button-field.btn.btn-primary
+{
+    background-color:#002a80;
+}
+
+div.container
+{
+    margin-top: 17px;
+    margin-bottom: 0px;
+}
+
+header{
+    margin-bottom: 0px;
+}
+
+div.trail-wrapper.hidden-print
+{
+    margin-top: -18px;
+}
+
+div.navbar-header
+{
+    background-color:#002a80;
+}
+

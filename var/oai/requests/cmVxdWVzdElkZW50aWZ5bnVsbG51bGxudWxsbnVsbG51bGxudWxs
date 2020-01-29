@@ -1,0 +1,6 @@
+<request verb="Identify">http://localhost:8080/oai/request</request><Identify><repositoryName>DSpace at My University</repositoryName><baseURL>http://localhost:8080/oai/request</baseURL><protocolVersion>2.0</protocolVersion><adminEmail>repositoriounicah@unicah.edu</adminEmail><earliestDatestamp>2019-10-30T04:24:39Z</earliestDatestamp><deletedRecord>transient</deletedRecord><granularity>YYYY-MM-DDThh:mm:ssZ</granularity><description><oai-identifier xmlns="http://www.openarchives.org/OAI/2.0/oai-identifier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai-identifier http://www.openarchives.org/OAI/2.0/oai-identifier.xsd">
+<scheme>oai</scheme>
+<repositoryIdentifier>dspace..edu</repositoryIdentifier>
+<delimiter>:</delimiter>
+<sampleIdentifier>oai:dspace.unicah.edu:123456789/1234</sampleIdentifier>
+</oai-identifier></description></Identify></OAI-PMH>

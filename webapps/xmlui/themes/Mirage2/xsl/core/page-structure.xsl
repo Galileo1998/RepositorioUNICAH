@@ -342,11 +342,12 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-
-                         <a  href="{$context-path}/" class="ds-option" style="color: white; font-size: 125%;">
+                        <center>
+                         <a href="{$context-path}/" class="ds-option" style="color: white; font-size: 125%;">
                             <img src="{$theme-path}images/redesSociales/SIN_FONDO.jpg" width="50px" height="50px"/>
-                            UNIVERSIDAD CATÓLICA DE HONDURAS
+                            UNIVERSIDAD CATÓLICA DE <a href="{$context-path}/" class="ds-option-a" style="color: white; font-size: 125%;">HONDURAS</a>
                         </a>
+                        </center>
         
 
                         <div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
@@ -446,7 +447,7 @@
                                             <li>
                                                 <a href="{/dri:document/dri:meta/dri:userMeta/
                             dri:metadata[@element='identifier' and @qualifier='url']}">
-                                                    <i18n:text>.Navigation.profile</i18n:text>
+                                                    <i18n:text>xmlui.EPerson.Navigation.profile</i18n:text>
                                                 </a>
                                             </li>
                                             <li>
@@ -480,7 +481,7 @@
                     </div>
                 </div>
             </div>
-                 <img src="{$theme-path}images/redesSociales/virgen2.jpg" width="100%" height="75%">
+                 <img src="{$theme-path}images/redesSociales/virgen2.jpg" width="100%" height="75%" class="img-responsive">
                 </img>
 
         </header>
@@ -704,6 +705,7 @@
         <footer>
                 <div class="row">
                     <hr/>
+                    <center>
                     <div class="col-xs-7 col-sm-8">
                         <div>
                             <a href="http://www.unicah.edu/" target="_blank">Universidad Católica de Honduras</a> copyright&#160;&#169;&#160;2020&#160; <a href="http://www.unicah.edu/" target="_blank"></a>
@@ -728,13 +730,14 @@
                             </a>
                         </div>
                     </div>
+                    </center>
                     <div class="col-xs-5 col-sm-4 hidden-print">
                         <div class="pull-right">
-                            <span class="theme-by">Theme by&#160;</span>
+                          <!--  <span class="theme-by">Theme by&#160;</span>-->
                             <br/>
-                            <a title="Atmire NV" target="_blank" href="http://atmire.com">
+                          <!--  <a title="Atmire NV" target="_blank" href="http://atmire.com">
                                 <img alt="Atmire NV" src="{concat($theme-path, 'images/atmire-logo-small.svg')}"/>
-                            </a>
+                            </a>-->
                         </div>
 
                     </div>
@@ -786,8 +789,8 @@
                     <xsl:apply-templates />
                 </xsl:otherwise>
             </xsl:choose>
-
         </div>
+
     </xsl:template>
 
 
