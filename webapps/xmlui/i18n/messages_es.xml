@@ -257,7 +257,7 @@
 	<!-- org.dspace.app.xmlui.artifactbrowser.Navigation.java -->
 <message key="xmlui.ArtifactBrowser.Navigation.head_browse">Listar</message>
 <message key="xmlui.ArtifactBrowser.Navigation.head_all_of_dspace">Todo Theotokos</message>
-<message key="xmlui.ArtifactBrowser.Navigation.communities_and_collections">Comunidades &amp; Colecciones</message>
+<message key="xmlui.ArtifactBrowser.Navigation.communities_and_collections">Comunidades y Colecciones</message>
 <message key="xmlui.ArtifactBrowser.Navigation.browse_title">Títulos</message>
 <message key="xmlui.ArtifactBrowser.Navigation.browse_author">Autores</message>
 <message key="xmlui.ArtifactBrowser.Navigation.browse_subject">Materias</message>

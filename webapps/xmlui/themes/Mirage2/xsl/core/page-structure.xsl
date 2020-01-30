@@ -709,7 +709,7 @@
                     <center>
                     <div class="col-xs-9 col-sm-10">
                         <div>
-                            <a href="http://www.unicah.edu/" target="_blank">Universidad Católica de Honduras</a> copyright&#160;&#169;&#160;2020&#160;
+                            <a href="http://www.unicah.edu/" target="_blank">Universidad Católica de Honduras, "Nuestra Señora Reina de la Paz"</a> <!-- copyright&#160;&#169;&#160;2020&#160;-->
                         </div>
                         <div class="hidden-print">
                             <a>
