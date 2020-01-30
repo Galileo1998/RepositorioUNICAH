@@ -118,12 +118,11 @@
                                 <!--
                             The footer div, dropping whatever extra information is needed on the page. It will
                             most likely be something similar in structure to the currently given example. -->
-                            <div class="hidden-xs hidden-sm">
-                            <xsl:call-template name="buildFooter"/>
-                             </div>
+                            
                          </div>
-
-
+                            <div class="hidden-xs hidden-sm">
+                               <xsl:call-template name="buildFooter"/>
+                            </div>
                         </xsl:otherwise>
                     </xsl:choose>
                     <!-- Javascript at the bottom for fast page loading -->
@@ -344,8 +343,8 @@
                         </button>
                         <center>
                          <a href="{$context-path}/" class="ds-option" style="color: white; font-size: 125%;">
-                            <img src="{$theme-path}images/redesSociales/SIN_FONDO.jpg" width="50px" height="50px"/>
-                            UNIVERSIDAD CATÓLICA DE <a href="{$context-path}/" class="ds-option-a" style="color: white; font-size: 125%;">HONDURAS</a>
+                            <img src="{$theme-path}images/redesSociales/LOGO_2B80.png" width="50px" height="50px"/>
+                            UNIVERSIDAD CATÓLICA DE HONDURAS
                         </a>
                         </center>
         
@@ -703,12 +702,14 @@
     <!-- Like the header, the footer contains various miscellaneous text, links, and image placeholders -->
     <xsl:template name="buildFooter">
         <footer>
+ 
+            <p>&#160;</p>
                 <div class="row">
                     <hr/>
                     <center>
-                    <div class="col-xs-7 col-sm-8">
+                    <div class="col-xs-9 col-sm-10">
                         <div>
-                            <a href="http://www.unicah.edu/" target="_blank">Universidad Católica de Honduras</a> copyright&#160;&#169;&#160;2020&#160; <a href="http://www.unicah.edu/" target="_blank"></a>
+                            <a href="http://www.unicah.edu/" target="_blank">Universidad Católica de Honduras</a> copyright&#160;&#169;&#160;2020&#160;
                         </div>
                         <div class="hidden-print">
                             <a>
@@ -730,27 +731,30 @@
                             </a>
                         </div>
                     </div>
-                    </center>
-                    <div class="col-xs-5 col-sm-4 hidden-print">
-                        <div class="pull-right">
-                          <!--  <span class="theme-by">Theme by&#160;</span>-->
-                            <br/>
-                          <!--  <a title="Atmire NV" target="_blank" href="http://atmire.com">
-                                <img alt="Atmire NV" src="{concat($theme-path, 'images/atmire-logo-small.svg')}"/>
-                            </a>-->
+                    <div class="col-xs-3 col-sm-2">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4">
+                                <a href="https://www.facebook.com/UNICAHONDURAS">
+                                    <img src="{$theme-path}images/redesSociales/facebook_negro.png" width="32px"/>
+                                </a>
+                            </div>
+                            <div class="col-xs-4 col-sm-4">
+                                <a href="https://twitter.com/UNICAH_HN">
+                                    <img src="{$theme-path}images/redesSociales/twitter_negro.png" width="32px"/>
+                                </a>
+                            </div>
+                            <div class="col-xs-4 col-sm-4">
+                                <a href="https://www.instagram.com/unicah_hn/">
+                                    <img src="{$theme-path}images/redesSociales/instagram_negro.png" width="32px"/>
+                                </a>
+                            </div>                         
                         </div>
-
                     </div>
+                    </center>
+  
                 </div>
                 <!--Invisible link to HTML sitemap (for search engines) -->
-                <a class="hidden">
-                    <xsl:attribute name="href">
-                        <xsl:value-of
-                                select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>
-                        <xsl:text>/htmlmap</xsl:text>
-                    </xsl:attribute>
-                    <xsl:text>&#160;</xsl:text>
-                </a>
+   
             <p>&#160;</p>
         </footer>
     </xsl:template>

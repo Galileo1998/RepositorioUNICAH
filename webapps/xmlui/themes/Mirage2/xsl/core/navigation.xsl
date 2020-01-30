@@ -124,7 +124,7 @@
             </xsl:if>
             <xsl:apply-templates/>
 
-                  <div>
+               <!--   <div>
                   <a class="list-group-item active">
                   <span class="h5 list-group-item-heading h5">
                         <i18n:text>xmlui.redes.header</i18n:text>             
@@ -141,7 +141,7 @@
                         <img src="{$theme-path}images/redesSociales/instagram.png" width="25px"/>
                         Instagram</a>
                     </div>
-                </div>
+                </div>-->
             <!-- DS-984 Add RSS Links to Options Box -->
             <!--<xsl:if test="count(/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='feed']) != 0">
                 <div>

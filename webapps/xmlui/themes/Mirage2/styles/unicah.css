@@ -45,3 +45,44 @@ div.navbar-header
     background-color:#002a80;
 }
 
+footer
+{
+    background-color:#002a80;
+    width: 90%;
+    height: 120px;
+    color: #fff;
+    font-size: 18px;
+    
+}
+
+
+div.hidden-xs.hidden-sm
+{
+    background-color:#002a80; 
+    margin-right: 0px;  
+}
+
+div.footerEspecial
+{
+    margin-right: 0px;
+}
+
+div.trail-wrapper.hidden-print
+{
+    height: 35px;
+}
+div.hidden-print
+{
+    color: #fff;   
+    margin-right: 0px;
+}
+
+div.container
+{
+    margin-bottom: 15px;
+}
+
+header
+{
+    background-color:#002a80; 
+}
