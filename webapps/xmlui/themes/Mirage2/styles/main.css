@@ -1153,13 +1153,17 @@ textarea {
 }
 
 a {
-    color: #fff;
+    color: #000;
     text-decoration: none
+}
+
+footer a {
+    color: #fff;
 }
 
 a:hover,
 a:focus {
-    color: #fff;
+    color: #262626;
     text-decoration: underline
 }
 
@@ -7403,7 +7407,12 @@ button.close {
 .visible-sm,
 .visible-md,
 .visible-lg {
-    display: none !important
+    display: none !important;
+    background-color: #002a80;
+    width: 100%;
+    height: 125px;
+    color: #fff;
+    font-size: 18px;
 }
 
 .visible-xs-block,
@@ -7422,6 +7431,13 @@ button.close {
 }
 
 @media (max-width: 767px) {
+    footer {
+        background-color: #002a80;
+        width: 90%;
+        height: 125px;
+        color: #fff;
+        font-size: 18px;
+    }
     .visible-xs {
         display: block !important
     }
@@ -8330,7 +8346,8 @@ i.collapse {
 
 .ds-static-div.community-description.well.affix {
     width: 307px;
-    top: 15px
+    top: 15px;
+    color: #000;
 }
 
 @media (min-width: 768px) {

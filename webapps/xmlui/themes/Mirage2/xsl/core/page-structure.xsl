@@ -104,9 +104,6 @@
                                         <div class="col-xs-12 col-sm-12 col-md-9 main-content">
                                             <xsl:apply-templates select="*[not(self::dri:options)]"/>
 
-                                            <div class="visible-xs visible-sm">
-                                                <xsl:call-template name="buildFooter"/>
-                                            </div>
                                         </div>
                                         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
                                             <xsl:apply-templates select="dri:options"/>
@@ -120,6 +117,11 @@
                             most likely be something similar in structure to the currently given example. -->
                             
                          </div>
+                         <center>
+                                             <div class="visible-xs visible-sm">
+                                                <xsl:call-template name="buildFooter"/>
+                                            </div>
+                          </center>
                             <div class="hidden-xs hidden-sm">
                                <xsl:call-template name="buildFooter"/>
                             </div>
@@ -332,7 +334,6 @@
             <div class="navbar navbar-default navbar-static-top" role="navigation">
                 <div class="container">
                     <div class="navbar-header">
-
                         <button type="button" class="navbar-toggle" data-toggle="offcanvas">
                             <span class="sr-only">
                                 <i18n:text>xmlui.mirage2.page-structure.toggleNavigation</i18n:text>
@@ -343,15 +344,15 @@
                         </button>
                         <center>
                          <a href="{$context-path}/" class="ds-option" style="color: white; font-size: 125%;">
-                            <img src="{$theme-path}images/redesSociales/LOGO_2B80.png" width="50px" height="50px"/>
+                            <img src="{$theme-path}images/redesSociales/LOGOUNICAH.png" width="50px" height="50px"/>
                             UNIVERSIDAD CATÓLICA DE HONDURAS
                         </a>
                         </center>
-        
-
-                        <div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+                
+                        
+                        <div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg row">
+                        <center> 
                         <ul class="nav nav-pills pull-left ">
-
                             <xsl:if test="count(/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='supportedLocale']) &gt; 1">
                                 <li id="ds-language-selection-xs" class="dropdown">
                                     <xsl:variable name="active-locale" select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='currentLocale']"/>
@@ -380,6 +381,7 @@
                                             </li>
                                         </xsl:for-each>
                                     </ul>
+                              
                                 </li>
                             </xsl:if>
 
@@ -404,7 +406,9 @@
                                                 </a>
                                             </li>
                                         </ul>
+                                        
                                     </li>
+                                    
                                 </xsl:when>
                                 <xsl:otherwise>
                                     <li>
@@ -418,9 +422,11 @@
                                 </xsl:otherwise>
                             </xsl:choose>
                         </ul>
-                              </div>
+                        </center>
+                      </div>
+                             
                     </div>
-
+                
                     <div class="navbar-header pull-right hidden-xs">
                         <ul class="nav navbar-nav pull-left">
                               <xsl:call-template name="languageSelection"/>
@@ -702,14 +708,14 @@
     <!-- Like the header, the footer contains various miscellaneous text, links, and image placeholders -->
     <xsl:template name="buildFooter">
         <footer>
- 
             <p>&#160;</p>
                 <div class="row">
                     <hr/>
                     <center>
-                    <div class="col-xs-9 col-sm-10">
+                    <div class="col-xs-12 col-sm-10">
                         <div>
-                            <a href="http://www.unicah.edu/" target="_blank">Universidad Católica de Honduras, "Nuestra Señora Reina de la Paz"</a> <!-- copyright&#160;&#169;&#160;2020&#160;-->
+                            <img src="{$theme-path}images/redesSociales/LOGO_2B80.png" width="30px" height="30px"/>
+                            <a href="http://www.unicah.edu/" target="_blank">     Universidad Católica de Honduras, "Nuestra Señora Reina de la Paz"</a> <!-- copyright&#160;&#169;&#160;2020&#160;-->
                         </div>
                         <div class="hidden-print">
                             <a>
@@ -731,7 +737,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-xs-3 col-sm-2">
+                    <div class="col-xs-12 col-sm-2">
                         <div class="row">
                             <div class="col-xs-4 col-sm-4">
                                 <a href="https://www.facebook.com/UNICAHONDURAS">

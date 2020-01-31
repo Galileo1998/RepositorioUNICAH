@@ -1,93 +1,155 @@
-﻿header .navbar-default
-{
-   background-color: #002a80; 
-   height: 75px;
+﻿header .navbar-default {
+    background-color: #002a80;
+    height: 75px;
 }
 
-span .list-group-item-heading
-{
-    background-color: #002a80; 
+span .list-group-item-heading {
+    background-color: #002a80;
 }
 
-a .active
-{
-    background-color: #002a80; 
+a .active {
+    background-color: #002a80;
 }
 
-a.list-group-item.active
-{
-    background-color:#002a80;
-    text-decoration:none
+a.list-group-item.active {
+    background-color: #002a80;
+    text-decoration: none
 }
 
-button.ds-button-field.btn.btn-primary
-{
-    background-color:#002a80;
+button.ds-button-field.btn.btn-primary {
+    background-color: #002a80;
 }
 
-div.container
-{
+div.container {
     margin-top: 17px;
     margin-bottom: 0px;
 }
 
-header{
+header {
     margin-bottom: 0px;
 }
 
-div.trail-wrapper.hidden-print
-{
+div.trail-wrapper.hidden-print {
     margin-top: -18px;
 }
 
-div.navbar-header
-{
-    background-color:#002a80;
+div.navbar-header {
+    background-color: #002a80;
 }
 
-footer
-{
-    background-color:#002a80;
+footer {
+    background-color: #002a80;
     width: 90%;
     height: 125px;
     color: #fff;
     font-size: 18px;
-  
 }
 
-
-div.hidden-xs.hidden-sm
-{
-    background-color:#002a80; 
-    margin-right: 0px;  
-}
-
-div.footerEspecial
-{
+div.hidden-xs.hidden-sm {
+    background-color: #002a80;
     margin-right: 0px;
 }
 
-div.trail-wrapper.hidden-print
-{
+div.footerEspecial {
+    margin-right: 0px;
+}
+
+div.trail-wrapper.hidden-print {
     height: 35px;
 }
-div.hidden-print
-{
-    color: #fff;   
+
+div.hidden-print {
+    color: #fff;
     margin-right: 0px;
 }
 
-div.container
-{
+div.container {
     margin-bottom: 15px;
 }
 
-header
-{
-    background-color:#002a80; 
+header {
+    background-color: #002a80;
 }
 
-body
-{
+body {
     margin-bottom: 0px;
+    overflow-x: hidden;
+}
+
+p.ds-paragraph a {
+    color: #002a80;
+    background-color: #fff;
+}
+
+div.table-responsive {
+    color: #000;
+}
+
+div.ds-table.table.table-striped.table-hover {
+    color: #000;
+}
+
+div.ds-table-cell.odd {
+    color: #000;
+}
+
+div.visible-xs.visible-sm {
+    background-color: #002a80;
+    width: 100%;
+    margin-top: 50px;
+    height: 200px;
+    color: #fff;
+    font-size: 18px;
+}
+
+div.navbar-header.pull-right.visible-xs.hidden-sm.hidden-md.hidden-lg.row {
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+    align-content: center;
+    align-items: right;
+    width: 100%;
+    margin-right: 50px;
+}
+
+ul.nav.nav-pills.pull-left {
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+    align-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-left: 48%;
+}
+
+button.navbar-toggle.visible-sm {
+    width: 25px;
+    height: 25px;
+}
+
+b.visible-xs.glyphicon.glyphicon-user {
+    height: 15px;
+}
+
+button.dropdown-toggle.navbar-toggle.navbar-link {
+    height: 20px;
+    padding-left: 30%;
+}
+
+b.visible-xs.glyphicon.glyphicon-globe {
+    height: 15px;
+}
+
+@media (max-width: 600px) {
+    footer {
+        background-color: #002a80;
+        width: 90%;
+        height: 125px;
+        color: #fff;
+        font-size: 18px;
+    }
+    div.hidden-xs.hidden-sm {
+        background-color: #002a80;
+        margin-right: 0px;
+    }
 }
